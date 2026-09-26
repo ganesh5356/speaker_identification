@@ -1,0 +1,12 @@
+{
+  "sample_rate": 16000,
+  "segment_seconds": 3.0,
+  "n_mfcc": 40,
+  "n_mels": 64,
+  "n_fft": 512,
+  "win_length": 400,
+  "hop_length": 160,
+  "fmin": 20,
+  "fmax": 7600,
+  "n_frames": 301
+}

@@ -1,0 +1,8 @@
+,path,speaker,split
+0,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Ganesh\WhatsApp Audio 2026-09-26 at 11.49.21 AM (1).wav,Ganesh,train
+1,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Ganesh\WhatsApp Audio 2026-09-26 at 11.49.21 AM.wav,Ganesh,train
+2,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Ganesh\WhatsApp Audio 2026-09-26 at 11.49.22 AM.wav,Ganesh,val
+3,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Ganesh\WhatsApp Audio 2026-09-26 at 11.49.23 AM.wav,Ganesh,test
+4,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Rakshitha\WhatsApp Audio 2026-09-26 at 1.11.21 PM.wav,Rakshitha,val
+5,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Rakshitha\WhatsApp Audio 2026-09-26 at 1.11.22 PM.wav,Rakshitha,train
+6,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Rakshitha\WhatsApp Audio 2026-09-26 at 12.00.40 PM.wav,Rakshitha,test

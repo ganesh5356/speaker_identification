@@ -1,0 +1,49 @@
+# Node / frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/.cache/
+frontend/.parcel-cache/
+frontend/coverage/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+*.egg-info/
+
+# Build artifacts
+build/
+dist/
+*.egg/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Environment files
+.env
+.env.*
+
+# Local data (optional)
+# Uncomment if you do not want to track local recordings or generated artifacts
+# recordings/
+# reports/
+# dataset/
