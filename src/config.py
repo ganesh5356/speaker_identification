@@ -38,7 +38,12 @@ N_FRAMES = 1 + SEGMENT_SAMPLES // HOP_LENGTH     # 301 frames per segment
 SEED = 42
 VAL_FRACTION = 0.2              # fraction of each speaker's FILES
 TEST_FRACTION = 0.2
-MIN_CONFIDENCE = 0.60           # UI shows a warning below this
+
+# ---------------------------------------------------- unknown-speaker rejection
+MIN_SPEECH_RMS = 0.005          # minimum RMS energy to consider audio as valid speech
+SIMILARITY_THRESHOLD = 0.58     # cosine similarity to closest voiceprint required to accept
+SIMILARITY_MARGIN = 0.05        # closest voiceprint must beat runner-up by this margin
+MIN_CONFIDENCE = 0.60           # legacy softmax display value, no longer used for rejection
 
 
 def snapshot() -> dict:

@@ -80,27 +80,58 @@ def build_split(df_split: pd.DataFrame, encoder: LabelEncoder, augment: bool, rn
             np.array(file_ids, dtype=np.int64))
 
 
+def generate_background_features(n_samples: int, rng: np.random.Generator) -> np.ndarray:
+    """Generate generic background/noise/unknown speech formant MFCC features."""
+    feats = []
+    for _ in range(n_samples):
+        t = np.linspace(0, 1, C.N_FRAMES)
+        freq = rng.uniform(0.5, 5.0)
+        base = np.outer(np.sin(2 * np.pi * freq * t), rng.normal(size=C.N_MFCC))
+        noise = rng.normal(size=(C.N_FRAMES, C.N_MFCC)) * rng.uniform(0.5, 2.0)
+        m = base + noise
+        m = (m - m.mean(axis=0)) / (m.std(axis=0) + 1e-8)
+        feats.append(m.astype(np.float32))
+    return np.stack(feats)
+
+
 def main(augment: bool):
     C.FEATURES_DIR.mkdir(exist_ok=True)
     df = split_files(collect_files())
-    encoder = LabelEncoder().fit(df["speaker"])
+    enrolled_speakers = list(sorted(df["speaker"].unique()))
+    all_classes = enrolled_speakers + ["_background_"]
+    encoder = LabelEncoder().fit(all_classes)
+    bg_label = int(encoder.transform(["_background_"])[0])
     rng = np.random.default_rng(C.SEED)
 
     print("Recordings per speaker and split:")
     print(pd.crosstab(df["speaker"], df["split"]), "\n")
 
+    split_counts = {"train": 300, "val": 60, "test": 40}
+
     for split in ["train", "val", "test"]:
         X, y, fid = build_split(df[df["split"] == split], encoder,
                                 augment=(augment and split == "train"), rng=rng)
+        
+        # Append generic background/unknown features
+        n_bg = split_counts[split]
+        bg_X = generate_background_features(n_bg, rng)
+        bg_y = np.full(n_bg, bg_label, dtype=np.int64)
+        bg_fid = np.full(n_bg, -1, dtype=np.int64)
+
+        X = np.concatenate([X, bg_X], axis=0)
+        y = np.concatenate([y, bg_y], axis=0)
+        fid = np.concatenate([fid, bg_fid], axis=0)
+
         np.save(C.FEATURES_DIR / f"{split}_X.npy", X)
         np.save(C.FEATURES_DIR / f"{split}_y.npy", y)
         np.save(C.FEATURES_DIR / f"{split}_file_ids.npy", fid)
         print(f"{split:5s}: X{X.shape}  y{y.shape}")
 
     df.to_csv(C.FEATURES_DIR / "manifest.csv")
-    (C.FEATURES_DIR / "label_map.json").write_text(json.dumps(list(encoder.classes_), indent=2))
+    (C.FEATURES_DIR / "label_map.json").write_text(json.dumps(all_classes, indent=2))
+    (C.FEATURES_DIR / "enrolled_map.json").write_text(json.dumps(enrolled_speakers, indent=2))
     (C.FEATURES_DIR / "params.json").write_text(json.dumps(C.snapshot(), indent=2))
-    print(f"\nSpeakers: {list(encoder.classes_)}\nSaved features to {C.FEATURES_DIR}")
+    print(f"\nEnrolled Speakers: {enrolled_speakers}\nSaved features to {C.FEATURES_DIR}")
 
 
 if __name__ == "__main__":

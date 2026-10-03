@@ -3,23 +3,39 @@ import { useEffect, useState } from "react";
 const RADIUS = 52;
 const CIRC = 2 * Math.PI * RADIUS;
 
-export default function ResultCard({ result, threshold }) {
-  const { speaker, confidence, probabilities } = result;
+export default function ResultCard({ result, sampleId = 1 }) {
+  const {
+    speaker,
+    is_known,
+    confidence,
+    closest_match,
+    probabilities,
+    speaker_count,
+    multi_speaker,
+    active_speakers,
+    summary,
+    timeline,
+  } = result;
+
   const [shown, setShown] = useState(false);
 
-  // trigger the CSS transitions after the first paint
   useEffect(() => {
     setShown(false);
     const t = setTimeout(() => setShown(true), 60);
     return () => clearTimeout(t);
   }, [result]);
 
-  const low = confidence < threshold;
-  const sorted = Object.entries(probabilities).sort((a, b) => b[1] - a[1]);
+  const sorted = probabilities ? Object.entries(probabilities).sort((a, b) => b[1] - a[1]) : [];
+  const highlightName = is_known ? speaker : null;
+  const sampleNumStr = String(sampleId).padStart(2, "0");
 
   return (
-    <section className={`card result ${low ? "low" : ""}`}>
-      <p className="eyebrow">Result</p>
+    <section className={`card result-card ${is_known ? "verified" : "unverified"}`}>
+      <div className="card-top-row">
+        <span className="eyebrow">PREDICTION RESULT</span>
+        <span className="sample-badge">{sampleNumStr}</span>
+      </div>
+
       <div className="result-head">
         <div className="ring">
           <svg viewBox="0 0 120 120">
@@ -30,36 +46,54 @@ export default function ResultCard({ result, threshold }) {
               cy="60"
               r={RADIUS}
               strokeDasharray={CIRC}
-              strokeDashoffset={shown ? CIRC * (1 - confidence) : CIRC}
+              strokeDashoffset={shown ? CIRC * (1 - (confidence || 0)) : CIRC}
             />
           </svg>
-          <span>{Math.round(confidence * 100)}%</span>
+          <div className="ring-content">
+            <span className="ring-val">{Math.round((confidence || 0) * 100)}%</span>
+            <span className="ring-label">MATCH</span>
+          </div>
         </div>
-        <div>
-          <p className="muted">Predicted speaker</p>
-          <h2 className="speaker-name">{speaker}</h2>
-          {low && (
-            <p className="warn">
-              Low confidence — this may be a voice that isn't enrolled, or a noisy recording.
-            </p>
+
+        <div className="result-info">
+          {multi_speaker ? (
+            <div className="badge-tag multi">MULTI-SPEAKER DETECTED</div>
+          ) : is_known ? (
+            <div className="badge-tag known">AUTHENTICATED VOICEPRINT</div>
+          ) : (
+            <div className="badge-tag unknown">UNIDENTIFIED VOICEPRINT</div>
           )}
+
+          {is_known ? (
+            <h2 className="speaker-name">{speaker}</h2>
+          ) : (
+            <>
+              <h2 className="speaker-name unknown-name">UNKNOWN VOICE</h2>
+              <p className="warn">
+                Closest voiceprint match: <strong>{closest_match}</strong> ({Math.round((confidence || 0) * 100)}%)
+              </p>
+            </>
+          )}
+
+          {summary && <p className="summary-text">{summary}</p>}
         </div>
       </div>
 
-      <ul className="bars">
-        {sorted.map(([name, p]) => (
-          <li key={name}>
-            <span className="bar-name">{name}</span>
-            <div className="bar-track">
-              <div
-                className={`bar-fill ${name === speaker ? "top" : ""}`}
-                style={{ width: shown ? `${p * 100}%` : "0%" }}
-              />
-            </div>
-            <span className="bar-pct">{(p * 100).toFixed(1)}%</span>
-          </li>
-        ))}
-      </ul>
+      {timeline && timeline.length > 0 && (
+        <div className="timeline-section">
+          <p className="section-subtitle">SPEAKER DIARIZATION TIMELINE</p>
+          <div className="timeline-list">
+            {timeline.map((item, idx) => (
+              <div key={idx} className={`timeline-item ${item.is_known ? "known-item" : "unknown-item"}`}>
+                <span className="time-range">{item.start_time.toFixed(1)}s - {item.end_time.toFixed(1)}s</span>
+                <span className="timeline-speaker">{item.speaker}</span>
+                <span className="timeline-sim">SIM {(item.similarity * 100).toFixed(0)}%</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
     </section>
   );
 }

@@ -26,8 +26,9 @@ export default function Visualizer({ analyser, active }) {
       const gap = 4;
       const barW = (w - gap * (BARS - 1)) / BARS;
       const grad = ctx.createLinearGradient(0, 0, w, 0);
-      grad.addColorStop(0, "#6366f1");
-      grad.addColorStop(1, "#22d3ee");
+      grad.addColorStop(0, "#10b981");
+      grad.addColorStop(0.5, "#06b6d4");
+      grad.addColorStop(1, "#6366f1");
       ctx.fillStyle = grad;
 
       for (let i = 0; i < BARS; i++) {

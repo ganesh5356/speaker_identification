@@ -1,0 +1,34 @@
+:root {
+  /* Color Palette - Obsidian Dark Cinematic */
+  --bg-dark: #04060a;
+  --bg-surface: #0a0d14;
+  --bg-card: rgba(14, 18, 26, 0.65);
+  --bg-card-hover: rgba(22, 28, 40, 0.85);
+
+  --border-dim: rgba(255, 255, 255, 0.06);
+  --border-bright: rgba(255, 255, 255, 0.14);
+  --border-accent: rgba(139, 92, 246, 0.4);
+
+  --text-main: #f8fafc;
+  --text-muted: #64748b;
+  --text-dim: #334155;
+
+  /* Accents - Muted Violet & Soft Emerald */
+  --accent-primary: #8b5cf6;
+  --accent-primary-glow: rgba(139, 92, 246, 0.25);
+  --accent-emerald: #10b981;
+  --accent-emerald-glow: rgba(16, 185, 129, 0.25);
+  --accent-danger: #ef4444;
+
+  /* Typography Fonts */
+  --font-display: "Outfit", -apple-system, sans-serif;
+  --font-mono: "Space Grotesk", monospace;
+  --font-body: "Inter", sans-serif;
+
+  /* Layout */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-full: 9999px;
+  --backdrop-blur: 20px;
+}

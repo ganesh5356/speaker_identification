@@ -13,3 +13,10 @@ export async function identifySpeaker(wavBlob) {
   if (!res.ok) throw new Error(data.error || "Prediction failed");
   return data;
 }
+
+export async function getEvaluation() {
+  const res = await fetch("/api/evaluation");
+  const data = await res.json().catch(() => ({}));
+  if (!res.ok) throw new Error(data.error || "Failed to load evaluation metrics");
+  return data;
+}

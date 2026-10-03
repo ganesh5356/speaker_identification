@@ -1,202 +1,174 @@
-# Speaker Recognition Project
+# 🎙️ Speaker Recognition & Voice Intelligence Console
 
-This project builds a speaker recognition system using MFCC features and a BiLSTM neural network. It includes:
+A high-performance **Speaker Recognition System** and **Voice Intelligence Console** built with Python, MFCC feature extraction, a **BiLSTM Deep Neural Network**, Flask RESTful API backend, and a modern **Dark Gaming / Cinematic React Frontend**.
 
-- audio preprocessing and MFCC extraction
-- dataset preparation and train/validation/test splitting
-- model training and evaluation
-- CLI prediction for new audio files
-- a Flask API for serving predictions
-- a React frontend for recording and identifying speakers
+---
 
-## Project overview
+## 🌟 Key Features
 
-The project follows this flow:
+- **BiLSTM Deep Learning Model**: Acoustic model trained on MFCC sequence coefficients for high-accuracy voice identification.
+- **Dark Cinematic Visual Console**: Modern UI inspired by premium gaming and iPhone lock-screen aesthetics with glowing purple/emerald accents and numerical step navigation (`01`, `02`, `03`, `04`).
+- **Comprehensive Voice Analysis Result Experience**:
+  - **Identified Speaker Display**: Prominent speaker matching with automatic `UNKNOWN SPEAKER` fallback when below threshold.
+  - **Dynamic Confidence Score**: Configurable thresholds (`HIGH` $\ge 80\%$, `MEDIUM` $60\%-79.99\%$, `LOW` $< 60\%$) with status badges.
+  - **Unknown Speaker Warning**: Subtle alert banner when audio fails identification confidence requirement.
+  - **Probability Distribution Chart**: Horizontal bar chart comparing probabilities across all enrolled speakers.
+  - **Audio Details**: Privacy-focused audio metadata (`FILE`, `DURATION`, `SAMPLE RATE`, `ANALYZED AT`).
+  - **Audio Quality Checks**: Automatic verification for sample length, noise level, and volume.
+  - **Waveform Analyzer**: Animated continuous signal plot showing dynamic amplitude.
+  - **Spectrogram / MFCC Heatmap**: Structured acoustic feature heatmap over time frames.
+  - **Plain-Language Summary**: Accessible, non-technical sentence explaining prediction logic.
+  - **Low-Confidence Tips**: Contextual guidance on improving microphone placement and environment.
+  - **PDF Report Download**: Instant export of detailed analysis reports.
+- **Multi-Speaker Diarization**: Support for multi-speaker segment detection.
+- **Developer Evaluation Console**: F1-Score metrics, Confusion Matrix, and validation reports.
 
-1. Collect audio files under the `dataset/` folder by speaker name.
-2. Prepare and transform audio into MFCC-based features.
-3. Train a BiLSTM model in `src/train_model.py`.
-4. Evaluate the trained model in `src/evaluate_model.py`.
-5. Run predictions with `src/predict.py`.
-6. Serve predictions through the Flask API in `app/api.py`.
-7. Use the frontend in `frontend/` to record audio and display the speaker result.
+---
 
-## Folder structure
+## 📁 Project Structure
 
-- `app/` — Flask API server
-- `dataset/` — speaker audio files, organized by person
-- `features/` — generated MFCC feature arrays and metadata
-- `frontend/` — React + Vite frontend
-- `models/` — trained model and label metadata
-- `reports/` — evaluation reports and plots
-- `src/` — training, preprocessing, prediction, and audio utilities
+```text
+├── app/                  # Flask REST API backend (api.py)
+├── dataset/              # Training audio recordings organized by speaker folder
+├── features/             # Extracted MFCC features, standardizer scalars, metadata
+├── frontend/             # React + Vite dark futuristic web interface
+│   ├── src/
+│   │   ├── components/   # UI components including AnalysisResult/ sub-components
+│   │   ├── screens/      # Main application views (Analysis, Result, History, Evaluation)
+│   │   ├── styles/       # Dark theme design system & global CSS
+│   │   └── utils/        # Confidence logic & mock data normalizer
+├── models/               # Saved Keras model (speaker_bilstm.keras) & label maps
+├── reports/              # Model evaluation metrics & visual confusion matrices
+├── src/                  # Python core ML pipeline
+│   ├── prepare_dataset.py# MFCC feature extraction & data augmentation
+│   ├── train_model.py    # BiLSTM model training loop
+│   ├── evaluate_model.py # Evaluation & confusion matrix generator
+│   └── predict.py        # CLI and backend inference engine
+├── requirements.txt      # Python dependencies
+└── README.md             # Documentation
+```
 
-## Requirements
+---
 
-Python dependencies are in `requirements.txt`.
+## 🚀 Getting Started
 
-Frontend dependencies are in `frontend/package.json`.
+### 1. Prerequisites & Virtual Environment
 
-## Setup
-
-### 1) Create a virtual environment
+Clone the repository and set up a Python virtual environment:
 
 ```bash
+# Clone the repository
+git clone https://github.com/your-username/speaker-recognition.git
+cd speaker-recognition
+
+# Create virtual environment
 python -m venv .venv
 ```
 
-On Windows PowerShell:
+Activate the environment:
+- **Windows PowerShell**:
+  ```powershell
+  .\.venv\Scripts\Activate.ps1
+  ```
+- **macOS / Linux**:
+  ```bash
+  source .venv/bin/activate
+  ```
 
-```powershell
-.\.venv\Scripts\Activate.ps1
-```
+### 2. Install Dependencies
 
-On macOS/Linux:
-
-```bash
-source .venv/bin/activate
-```
-
-### 2) Install Python dependencies
-
+**Backend Python dependencies:**
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3) Install frontend dependencies
-
+**Frontend React dependencies:**
 ```bash
 cd frontend
 npm install
+cd ..
 ```
 
-## Dataset format
+---
 
-Place your recordings in folders like this:
+## 🎧 Dataset Format
+
+Organize your voice recordings under the `dataset/` directory by speaker name:
 
 ```text
 dataset/
-  Ganesh/
-    sample1.wav
-    sample2.wav
-  Rakshitha/
-    sample1.wav
-    sample2.wav
+├── Ganesh/
+│   ├── recording1.wav
+│   └── recording2.wav
+├── Rakshitha/
+│   ├── recording1.wav
+│   └── recording2.wav
+└── Speaker_C/
+    ├── recording1.wav
+    └── recording2.wav
 ```
 
-The project expects each speaker to have a folder under `dataset/` and audio files inside it.
+---
 
-## Training pipeline
+## ⚙️ Model Pipeline Workflow
 
-### Prepare the dataset and features
+### 1) Feature Extraction & Data Augmentation
 
+Process raw `.wav` audio into MFCC features:
 ```bash
 python src/prepare_dataset.py
 ```
 
-Optional augmentation:
-
+Enable optional audio data augmentation (pitch shift, noise addition):
 ```bash
 python src/prepare_dataset.py --augment
 ```
 
-### Train the model
+### 2) Model Training
 
-```bash
-python src/train_model.py
-```
-
-Optional arguments:
-
+Train the BiLSTM neural network:
 ```bash
 python src/train_model.py --epochs 60 --batch-size 32
 ```
+*Trained weights and label mappings are saved to `models/speaker_bilstm.keras`.*
 
-This saves the trained model to `models/speaker_bilstm.keras` and copies label metadata into the models folder.
+### 3) Model Evaluation
 
-### Evaluate the model
-
+Generate confusion matrix and evaluation metrics:
 ```bash
 python src/evaluate_model.py
 ```
 
-This saves accuracy and confusion matrix reports under `reports/`.
+### 4) CLI Inference Test
 
-## Prediction
-
-### Predict from an audio file
-
+Test prediction on an audio file:
 ```bash
-python src/predict.py path/to/audio.wav
+python src/predict.py path/to/sample.wav
 ```
 
-### Predict from microphone input
+---
 
-```bash
-python src/predict.py --mic --seconds 5
-```
+## 🌐 Running the Web Application
 
-## Run the API
+### Step 1: Start the Backend API
 
-From the project root:
-
+From the project root directory:
 ```bash
 python app/api.py
 ```
+*Backend API server runs at `http://127.0.0.1:8000`.*
 
-The API runs at:
-
-```text
-http://127.0.0.1:8000
-```
-
-Check health:
-
-```bash
-curl http://127.0.0.1:8000/api/health
-```
-
-## Run the frontend
+### Step 2: Start the Frontend Application
 
 In a separate terminal:
-
 ```bash
 cd frontend
 npm run dev
 ```
+*Frontend console runs at `http://localhost:5173`.*
 
-The frontend typically runs at:
+---
 
-```text
-http://localhost:5173
-```
+## 📄 License
 
-## Frontend usage
-
-1. Open the frontend in the browser.
-2. Allow microphone access or upload an audio file.
-3. Click the prediction button.
-4. The app sends audio to the Flask API and displays the predicted speaker with confidence.
-
-## Notes
-
-- The model uses MFCC sequences and a BiLSTM architecture.
-- Audio is resampled to 16 kHz and processed in short segments.
-- Ensure the training and prediction configuration stay consistent.
-- If the model is not trained yet, prediction endpoints will return an error until `src/train_model.py` has been run.
-
-## Common commands summary
-
-```bash
-pip install -r requirements.txt
-cd frontend && npm install
-python src/prepare_dataset.py
-python src/train_model.py --epochs 60 --batch-size 32
-python src/evaluate_model.py
-python app/api.py
-cd frontend && npm run dev
-```
-
-## License
-
-This project is intended for educational and personal use.
+This project is built for educational and voice intelligence research purposes.

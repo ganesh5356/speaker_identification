@@ -6,7 +6,7 @@ import numpy as np
 import librosa
 
 from config import (SAMPLE_RATE, SEGMENT_SECONDS, SEGMENT_HOP_SECONDS,
-                    MIN_SEGMENT_SECONDS, TRIM_TOP_DB)
+                    MIN_SEGMENT_SECONDS, TRIM_TOP_DB, MIN_SPEECH_RMS)
 
 
 def load_audio(path_or_file, sr: int = SAMPLE_RATE) -> np.ndarray:
@@ -16,9 +16,14 @@ def load_audio(path_or_file, sr: int = SAMPLE_RATE) -> np.ndarray:
 
 
 def clean_audio(y: np.ndarray) -> np.ndarray:
-    """Trim leading/trailing silence and peak-normalise."""
+    """Trim leading/trailing silence and peak-normalise if sufficient speech energy exists."""
     if y.size == 0:
         return y
+    rms = float(np.sqrt(np.mean(y ** 2)))
+    if rms < MIN_SPEECH_RMS:
+        # Audio is almost silent or quiet background noise - do not peak normalize
+        return np.array([], dtype=np.float32)
+
     trimmed, _ = librosa.effects.trim(y, top_db=TRIM_TOP_DB)
     # only use the trimmed version if enough speech is left
     if trimmed.size >= int(MIN_SEGMENT_SECONDS * SAMPLE_RATE):
