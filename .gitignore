@@ -52,12 +52,28 @@ Thumbs.db
 .env.*
 .env.local
 
-# Temporary Audio Recordings
-recordings/*.wav
+# Temporary Scratch Folders
 scratch/
 "New folder"/
 
-# Model checkpoints & large dataset files (Optional: uncomment if dataset is large)
-# models/*.keras
-# dataset/*/*.wav
-# features/*.npy
+# ==============================================================================
+# HEAVY DATASETS, FEATURE ARRAYS & TRAINED MODEL BINARIES (EXCLUDED FOR FAST GIT)
+# ==============================================================================
+
+# Audio Files (Dataset & Mic Recordings)
+*.wav
+*.mp3
+*.flac
+*.ogg
+dataset/
+recordings/
+
+# Generated Feature Arrays & Scalers
+features/*.npy
+
+# Model Checkpoints & Centroid Weights
+models/*.keras
+models/*.npy
+
+# Heavy Generated Reports & Confusion Matrices
+reports/*.png
