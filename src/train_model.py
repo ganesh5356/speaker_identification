@@ -25,15 +25,15 @@ def build_model(n_frames: int, n_features: int, n_classes: int) -> tf.keras.Mode
     and centroid distance measurements work accurately for open-set / unknown
     speaker rejection.
     """
-    reg = tf.keras.regularizers.l2(1e-3)
+    reg = tf.keras.regularizers.l2(1e-4)
     inputs = layers.Input(shape=(n_frames, n_features), name="mfcc_sequence")
     x = layers.Bidirectional(
         layers.LSTM(64, return_sequences=True, kernel_regularizer=reg, recurrent_regularizer=reg),
         name="bilstm_1")(inputs)
-    x = layers.Dropout(0.3)(x)
+    x = layers.Dropout(0.2)(x)
     x = layers.Bidirectional(
         layers.LSTM(32, kernel_regularizer=reg, recurrent_regularizer=reg), name="bilstm_2")(x)
-    x = layers.Dropout(0.3)(x)
+    x = layers.Dropout(0.2)(x)
     x = layers.Dense(64, activation=None, kernel_regularizer=reg, name="embedding_linear")(x)
     x = layers.BatchNormalization()(x)
     embedding = layers.UnitNormalization(axis=-1, name="embedding")(x)
@@ -44,6 +44,7 @@ def build_model(n_frames: int, n_features: int, n_classes: int) -> tf.keras.Mode
                   loss="sparse_categorical_crossentropy",
                   metrics=["accuracy"])
     return model
+
 
 
 def plot_history(history, path):

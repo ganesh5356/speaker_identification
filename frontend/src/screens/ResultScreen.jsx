@@ -11,13 +11,15 @@ import AudioQuality from '../components/AnalysisResult/AudioQuality';
 import Waveform from '../components/AnalysisResult/Waveform';
 import FeatureHeatmap from '../components/AnalysisResult/FeatureHeatmap';
 import AnalysisSummary from '../components/AnalysisResult/AnalysisSummary';
+import TranscribedWords from '../components/AnalysisResult/TranscribedWords';
 import LowConfidenceTips from '../components/AnalysisResult/LowConfidenceTips';
 import DownloadReport from '../components/AnalysisResult/DownloadReport';
 
 export default function ResultScreen({ result, onReset }) {
   // Normalize incoming result or fallback to standard mock object
   const data = normalizeResultData(result);
-  const { isUnknown, level } = getConfidenceState(data.confidence, data.threshold);
+  const { isUnknown: confidenceIsLow, level } = getConfidenceState(data.confidence, data.threshold);
+  const isUnknown = data.is_known !== undefined ? !data.is_known : confidenceIsLow;
 
   return (
     <div className="analysis-console-screen anim-fade-up">
@@ -39,7 +41,12 @@ export default function ResultScreen({ result, onReset }) {
         {/* HERO HEADER: Speaker & Confidence */}
         <section className="console-hero-section">
           <div className="hero-left">
-            <SpeakerResult speaker={data.speaker} confidence={data.confidence} threshold={data.threshold} />
+            <SpeakerResult 
+              speaker={data.speaker} 
+              confidence={data.confidence} 
+              threshold={data.threshold} 
+              isKnown={data.is_known}
+            />
           </div>
           <div className="hero-right">
             <ConfidenceScore confidence={data.confidence} threshold={data.threshold} />
@@ -83,6 +90,9 @@ export default function ResultScreen({ result, onReset }) {
               probabilities={data.probabilities}
               summaryText={data.summary}
             />
+
+            {/* TRANSCRIBED WORDS (WHAT WAS SPOKEN) */}
+            <TranscribedWords transcription={data.transcription} />
 
             {/* LOW CONFIDENCE TIPS (If confidence low) */}
             {isUnknown && (

@@ -1,83 +1,178 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import { Activity, Play, Pause } from 'lucide-react';
 
 const Waveform = ({ waveformData = [] }) => {
-  // Fallback futuristic waveform array if none provided
-  const points = waveformData && waveformData.length > 0
-    ? waveformData
-    : [20, 35, 60, 45, 80, 95, 70, 40, 65, 85, 90, 50, 30, 65, 80, 55, 40, 25, 60, 75, 45, 30, 50, 35, 20];
+  const canvasRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [playhead, setPlayhead] = useState(0);
 
-  const maxVal = Math.max(...points, 100);
+  // Generate realistic, dense audio sample buffer if none supplied
+  const generateRealisticSamples = () => {
+    const samples = [];
+    const count = 180;
+    for (let i = 0; i < count; i++) {
+      const t = i / count;
+      const envelope = Math.sin(t * Math.PI) * 0.8 + 0.2;
+      const formants = 
+        Math.sin(i * 0.22) * 0.45 + 
+        Math.sin(i * 0.58) * 0.25 + 
+        Math.sin(i * 1.1) * 0.15 +
+        (Math.random() - 0.5) * 0.12;
+      const voiceBurst = (Math.sin(i * 0.08) > -0.2) ? 1.0 : 0.18;
+      const val = Math.max(0.04, Math.min(0.98, Math.abs(formants * envelope * voiceBurst)));
+      samples.push(val);
+    }
+    return samples;
+  };
+
+  const samples = (waveformData && waveformData.length > 30) 
+    ? waveformData.map(v => Math.min(1, Math.max(0.05, v / 100))) 
+    : generateRealisticSamples();
+
+  // Animated playhead loop
+  useEffect(() => {
+    let animId;
+    if (isPlaying) {
+      const step = () => {
+        setPlayhead(prev => (prev >= 1 ? 0 : prev + 0.005));
+        animId = requestAnimationFrame(step);
+      };
+      animId = requestAnimationFrame(step);
+    }
+    return () => cancelAnimationFrame(animId);
+  }, [isPlaying]);
+
+  // High-fidelity Canvas Audio Render that adapts dynamically to Light/Dark Mode
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    const width = canvas.width;
+    const height = canvas.height;
+    const midY = height / 2;
+
+    const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+
+    ctx.clearRect(0, 0, width, height);
+
+    // 1. Studio Reference Grid
+    ctx.strokeStyle = isLight ? 'rgba(15, 23, 42, 0.07)' : 'rgba(255, 255, 255, 0.06)';
+    ctx.lineWidth = 1;
+    [-0.75, -0.5, 0, 0.5, 0.75].forEach(ratio => {
+      const y = midY + (midY * 0.85 * ratio);
+      ctx.beginPath();
+      ctx.moveTo(40, y);
+      ctx.lineTo(width, y);
+      ctx.stroke();
+    });
+
+    // 2. dB Axis Labels on left
+    ctx.fillStyle = isLight ? '#64748b' : 'rgba(148, 163, 184, 0.65)';
+    ctx.font = '600 9px monospace';
+    ctx.fillText('+0dB', 6, midY - (midY * 0.75) + 3);
+    ctx.fillText('-6dB', 6, midY - (midY * 0.38) + 3);
+    ctx.fillText(' 0', 16, midY + 3);
+    ctx.fillText('-6dB', 6, midY + (midY * 0.38) + 3);
+    ctx.fillText('-12dB', 4, midY + (midY * 0.75) + 3);
+
+    // 3. Realistic Symmetrical Waveform Bars with Theme-Aware Gradient
+    const startX = 46;
+    const availWidth = width - startX - 8;
+    const barWidth = Math.max(1.8, (availWidth / samples.length) - 1.2);
+    const spacing = availWidth / samples.length;
+
+    samples.forEach((amp, i) => {
+      const x = startX + i * spacing;
+      const barH = amp * (height * 0.42);
+      const isPastPlayhead = isPlaying && (x - startX) / availWidth < playhead;
+
+      const grad = ctx.createLinearGradient(0, midY - barH, 0, midY + barH);
+      if (isPastPlayhead) {
+        grad.addColorStop(0, '#10b981');
+        grad.addColorStop(0.5, '#34d399');
+        grad.addColorStop(1, '#059669');
+      } else {
+        if (isLight) {
+          grad.addColorStop(0, '#6366f1');
+          grad.addColorStop(0.5, '#0284c7');
+          grad.addColorStop(1, '#4f46e5');
+        } else {
+          grad.addColorStop(0, '#818cf8');
+          grad.addColorStop(0.5, '#06b6d4');
+          grad.addColorStop(1, '#4338ca');
+        }
+      }
+
+      ctx.fillStyle = grad;
+      ctx.beginPath();
+      ctx.roundRect(x, midY - barH, barWidth, barH * 2, 1.5);
+      ctx.fill();
+    });
+
+    // 4. Smooth Envelope Curve Overlay
+    ctx.beginPath();
+    ctx.strokeStyle = isLight ? 'rgba(2, 132, 199, 0.65)' : 'rgba(6, 182, 212, 0.55)';
+    ctx.lineWidth = 1.3;
+    samples.forEach((amp, i) => {
+      const x = startX + i * spacing + barWidth / 2;
+      const y = midY - amp * (height * 0.42);
+      if (i === 0) ctx.moveTo(x, y);
+      else ctx.lineTo(x, y);
+    });
+    ctx.stroke();
+
+    // 5. Playhead Cursor if Playing
+    if (isPlaying) {
+      const playX = startX + playhead * availWidth;
+      ctx.strokeStyle = isLight ? '#059669' : '#34d399';
+      ctx.lineWidth = 1.5;
+      ctx.shadowColor = '#10b981';
+      ctx.shadowBlur = 8;
+      ctx.beginPath();
+      ctx.moveTo(playX, 8);
+      ctx.lineTo(playX, height - 8);
+      ctx.stroke();
+      ctx.shadowBlur = 0;
+    }
+
+  }, [samples, isPlaying, playhead]);
 
   return (
-    <div className="waveform-card">
+    <div className="waveform-card professional-audio-card">
       <div className="waveform-header">
-        <span className="section-label">AUDIO WAVEFORM ANALYZER</span>
-        <span className="waveform-live-tag">RAW SIGNAL</span>
-      </div>
-      <div className="waveform-visual-container">
-        <svg viewBox="0 0 500 120" className="waveform-svg" preserveAspectRatio="none">
-          <defs>
-            <linearGradient id="waveformGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stopColor="rgba(139, 92, 246, 0.4)" />
-              <stop offset="50%" stopColor="rgba(168, 85, 247, 0.9)" />
-              <stop offset="100%" stopColor="rgba(16, 185, 129, 0.6)" />
-            </linearGradient>
-            <linearGradient id="waveformAreaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-              <stop offset="0%" stopColor="rgba(168, 85, 247, 0.25)" />
-              <stop offset="100%" stopColor="rgba(168, 85, 247, 0.0)" />
-            </linearGradient>
-          </defs>
-
-          {/* Background grid line */}
-          <line x1="0" y1="60" x2="500" y2="60" stroke="rgba(255, 255, 255, 0.08)" strokeDasharray="4 4" />
-
-          {/* Continuous smoothed line path */}
-          {(() => {
-            const width = 500;
-            const step = width / (points.length - 1);
-            let pathD = `M 0 60`;
-            let areaD = `M 0 60`;
-
-            points.forEach((val, i) => {
-              const x = i * step;
-              const h = (val / maxVal) * 45;
-              const y = 60 - h;
-              pathD += ` L ${x} ${y}`;
-              areaD += ` L ${x} ${y}`;
-            });
-
-            // Mirrors down for realistic audio waveform look
-            for (let i = points.length - 1; i >= 0; i--) {
-              const x = i * step;
-              const h = (points[i] / maxVal) * 45;
-              const y = 60 + h;
-              areaD += ` L ${x} ${y}`;
-            }
-
-            areaD += ` Z`;
-
-            return (
-              <>
-                <path d={areaD} fill="url(#waveformAreaGrad)" />
-                <path d={pathD} fill="none" stroke="url(#waveformGrad)" strokeWidth="2.5" strokeLinecap="round" />
-              </>
-            );
-          })()}
-        </svg>
-
-        {/* Dynamic vertical pulse bar animation overlay */}
-        <div className="waveform-bars">
-          {points.map((val, i) => (
-            <div
-              key={i}
-              className="waveform-bar"
-              style={{
-                height: `${Math.max(12, (val / maxVal) * 100)}%`,
-                animationDelay: `${(i * 0.04).toFixed(2)}s`
-              }}
-            />
-          ))}
+        <div className="waveform-title-group">
+          <Activity size={15} className="audio-icon-pulse text-cyan" />
+          <span className="section-label">ACOUSTIC WAVEFORM (OSCILLOGRAM)</span>
         </div>
+        <div className="waveform-controls-header">
+          <button 
+            type="button"
+            className="waveform-play-btn"
+            onClick={() => setIsPlaying(!isPlaying)}
+            title={isPlaying ? "Pause playback" : "Preview signal playback"}
+          >
+            {isPlaying ? <Pause size={12} /> : <Play size={12} />}
+            <span>{isPlaying ? 'PAUSE' : 'PLAY SIGNAL'}</span>
+          </button>
+          <span className="waveform-live-tag">16 kHz / 16-BIT PCM</span>
+        </div>
+      </div>
+
+      <div className="waveform-visual-container studio-canvas-wrap">
+        <canvas 
+          ref={canvasRef} 
+          width={700} 
+          height={130} 
+          className="waveform-canvas-element"
+        />
+      </div>
+
+      <div className="waveform-timeline-footer">
+        <span>0.00s</span>
+        <span>0.75s</span>
+        <span>1.50s</span>
+        <span>2.25s</span>
+        <span>3.00s</span>
       </div>
     </div>
   );

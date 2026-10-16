@@ -2,24 +2,20 @@
 # GITIGNORE - Speaker Recognition & Voice Intelligence Console
 # ==============================================================================
 
-# Node / Frontend
+# Node / Frontend Dependencies & Builds
+node_modules/
 frontend/node_modules/
+dist/
 frontend/dist/
 frontend/.vite/
 frontend/.cache/
 frontend/.parcel-cache/
 frontend/coverage/
 
-# Logs & Temporary Execution Data
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-*.log
-*.tmp
-
-# Python & Virtual Environments
+# Python Virtual Environments & Bytecode
 __pycache__/
+*/__pycache__/
+*/*/__pycache__/
 *.py[cod]
 *$py.class
 *.pyo
@@ -34,10 +30,20 @@ ENV/
 .ipynb_checkpoints/
 *.egg-info/
 
-# Build & Distribution Artifacts
-build/
-dist/
-*.egg/
+# Audio Files & Raw Datasets (Heavy Binary Files - Excluded from Git)
+*.wav
+*.mp3
+*.flac
+*.ogg
+*.m4a
+*.webm
+dataset/
+recordings/
+
+# Generated Feature Arrays (Large ~230MB+ npy files - Excluded from Git)
+features/*.npy
+*.npy
+!models/centroids.npy
 
 # OS & Editor Files
 .DS_Store
@@ -52,28 +58,12 @@ Thumbs.db
 .env.*
 .env.local
 
-# Temporary Scratch Folders
+# Logs, Temporary Files & Scratch
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+*.tmp
 scratch/
 "New folder"/
-
-# ==============================================================================
-# HEAVY DATASETS, FEATURE ARRAYS & TRAINED MODEL BINARIES (EXCLUDED FOR FAST GIT)
-# ==============================================================================
-
-# Audio Files (Dataset & Mic Recordings)
-*.wav
-*.mp3
-*.flac
-*.ogg
-dataset/
-recordings/
-
-# Generated Feature Arrays & Scalers
-features/*.npy
-
-# Model Checkpoints & Centroid Weights
-models/*.keras
-models/*.npy
-
-# Heavy Generated Reports & Confusion Matrices
-reports/*.png

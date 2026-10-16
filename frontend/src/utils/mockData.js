@@ -33,12 +33,17 @@ export const defaultMockResult = {
 export const normalizeResultData = (rawResult) => {
   if (!rawResult) return defaultMockResult;
 
-  // Handles fractional confidence (0.924 -> 92.4) or percentage (92.4)
-  let rawConf = rawResult.confidence ?? rawResult.confidence_score ?? 92.4;
+  // Handles fractional confidence (0.85 -> 85.0) or percentage (85.0)
+  let rawConf = rawResult.confidence ?? rawResult.similarity ?? rawResult.confidence_score ?? 92.4;
   if (rawConf <= 1.0 && rawConf > 0) {
     rawConf = +(rawConf * 100).toFixed(1);
   } else {
     rawConf = +rawConf.toFixed(1);
+  }
+
+  let threshold = rawResult.threshold ?? 45;
+  if (threshold <= 1.0 && threshold > 0) {
+    threshold = +(threshold * 100).toFixed(0);
   }
 
   const normalizedSpeaker = rawResult.speaker || rawResult.predicted_speaker || "Speaker A";
@@ -71,7 +76,8 @@ export const normalizeResultData = (rawResult) => {
   return {
     speaker: normalizedSpeaker.replace(/\.(wav|mp3)$/i, ''),
     confidence: rawConf,
-    threshold: rawResult.threshold || 60,
+    threshold: threshold,
+    is_known: rawResult.is_known,
     probabilities: probs,
     audio: {
       id: rawResult.audio?.id || "01",
@@ -88,6 +94,7 @@ export const normalizeResultData = (rawResult) => {
     },
     waveform: rawResult.waveform || defaultMockResult.waveform,
     mfcc: rawResult.mfcc || defaultMockResult.mfcc,
-    summary: rawResult.summary || rawResult.plain_explanation
+    summary: rawResult.summary || rawResult.plain_explanation,
+    transcription: rawResult.transcription || "No words recognized."
   };
 };

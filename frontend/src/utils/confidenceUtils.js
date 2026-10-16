@@ -1,9 +1,9 @@
-export const DEFAULT_CONFIDENCE_THRESHOLD = 60; // 60% threshold
+export const DEFAULT_CONFIDENCE_THRESHOLD = 52; // 52% similarity threshold (calibrated)
 
 export function getConfidenceState(confidencePct, threshold = DEFAULT_CONFIDENCE_THRESHOLD) {
   const val = Number(confidencePct) || 0;
 
-  if (val >= 80) {
+  if (val >= 75) {
     return {
       level: "HIGH",
       colorClass: "level-high",

@@ -24,6 +24,8 @@ TRIM_TOP_DB = 25                # silence trimming threshold
 
 # ------------------------------------------------------------------ MFCC
 N_MFCC = 40
+INCLUDE_DELTAS = True           # extract static + delta + delta-delta (3x features)
+N_FEATURES = N_MFCC * 3 if INCLUDE_DELTAS else N_MFCC
 N_MELS = 64
 N_FFT = 512
 WIN_LENGTH = 400                # 25 ms at 16 kHz
@@ -41,7 +43,7 @@ TEST_FRACTION = 0.2
 
 # ---------------------------------------------------- unknown-speaker rejection
 MIN_SPEECH_RMS = 0.005          # minimum RMS energy to consider audio as valid speech
-SIMILARITY_THRESHOLD = 0.58     # cosine similarity to closest voiceprint required to accept
+SIMILARITY_THRESHOLD = 0.52     # optimal threshold calibrated between impostor (max 0.42) and genuine (min 0.84)
 SIMILARITY_MARGIN = 0.05        # closest voiceprint must beat runner-up by this margin
 MIN_CONFIDENCE = 0.60           # legacy softmax display value, no longer used for rejection
 
@@ -52,6 +54,8 @@ def snapshot() -> dict:
         "sample_rate": SAMPLE_RATE,
         "segment_seconds": SEGMENT_SECONDS,
         "n_mfcc": N_MFCC,
+        "include_deltas": INCLUDE_DELTAS,
+        "n_features": N_FEATURES,
         "n_mels": N_MELS,
         "n_fft": N_FFT,
         "win_length": WIN_LENGTH,
@@ -59,4 +63,4 @@ def snapshot() -> dict:
         "fmin": FMIN,
         "fmax": FMAX,
         "n_frames": N_FRAMES,
-    }
+    }

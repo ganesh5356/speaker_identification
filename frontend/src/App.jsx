@@ -22,6 +22,21 @@ export default function App() {
   const [sampleCounter, setSampleCounter] = useState(5);
   const [activeReportData, setActiveReportData] = useState(null);
 
+  const [theme, setTheme] = useState(() => {
+    const saved = localStorage.getItem("theme");
+    if (saved === "dark" || saved === "light") return saved;
+    return window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+  });
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme((prev) => (prev === "dark" ? "light" : "dark"));
+  };
+
   const recorderRef = useRef(null);
   const streamRef = useRef(null);
   const audioCtxRef = useRef(null);
@@ -33,6 +48,7 @@ export default function App() {
       .catch(() => setHealth({ state: "offline", speakers: [] }));
   }, []);
 
+
   const analyzeAudio = async (blob) => {
     setInteractionState("analyzing");
     const numStr = String(sampleCounter).padStart(2, "0");
@@ -43,12 +59,15 @@ export default function App() {
       const data = await identifySpeaker(wav);
       setResult(data);
 
+      const confRaw = data.similarity ?? data.confidence ?? 0;
+      const confPct = Math.round(confRaw <= 1.0 ? confRaw * 100 : confRaw);
+
       const newEntry = {
         id: numStr,
         sampleNumber: numStr,
         status: data.is_known ? "AUTHENTICATED" : "UNIDENTIFIED",
         speaker: data.speaker,
-        confidence: Math.round((data.similarity || data.confidence || 0) * 100),
+        confidence: confPct,
         timestamp: new Date().toLocaleTimeString(),
         isKnown: data.is_known,
         fullResult: data,
@@ -174,6 +193,14 @@ export default function App() {
         </div>
         <div className="system-actions-right">
           <button
+            className="system-tag btn-theme-toggle"
+            onClick={toggleTheme}
+            aria-label="Toggle light or dark mode theme"
+            title={`Switch to ${theme === "dark" ? "Light" : "Dark"} mode`}
+          >
+            {theme === "dark" ? "☀ LIGHT" : "☾ DARK"}
+          </button>
+          <button
             className="system-tag btn-eval-toggle"
             onClick={() => setActiveScreen(activeScreen === "evaluation" ? "analysis" : "evaluation")}
           >
@@ -183,6 +210,7 @@ export default function App() {
             {health.state === "online" ? "SYSTEM ONLINE" : "STANDBY MODE"}
           </span>
         </div>
+
       </header>
 
       {/* Numerical Side Navigation */}

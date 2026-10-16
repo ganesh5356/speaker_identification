@@ -86,7 +86,14 @@ export default function ResultCard({ result, sampleId = 1 }) {
             {timeline.map((item, idx) => (
               <div key={idx} className={`timeline-item ${item.is_known ? "known-item" : "unknown-item"}`}>
                 <span className="time-range">{item.start_time.toFixed(1)}s - {item.end_time.toFixed(1)}s</span>
-                <span className="timeline-speaker">{item.speaker}</span>
+                <span className="timeline-speaker">
+                  {item.speaker}
+                  {item.has_overlap && item.secondary_speaker && (
+                    <span style={{ opacity: 0.8, fontSize: '0.85em', color: '#06b6d4', marginLeft: '6px' }}>
+                      (+{item.secondary_speaker})
+                    </span>
+                  )}
+                </span>
                 <span className="timeline-sim">SIM {(item.similarity * 100).toFixed(0)}%</span>
               </div>
             ))}
