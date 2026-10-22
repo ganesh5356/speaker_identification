@@ -14,9 +14,17 @@ export async function identifySpeaker(wavBlob) {
   return data;
 }
 
-export async function getEvaluation() {
-  const res = await fetch("/api/evaluation");
+export async function getEvaluation(recompute = false) {
+  const url = recompute ? "/api/evaluation?recompute=true" : "/api/evaluation";
+  const res = await fetch(url);
   const data = await res.json().catch(() => ({}));
   if (!res.ok) throw new Error(data.error || "Failed to load evaluation metrics");
+  return data;
+}
+
+export async function recomputeEvaluation() {
+  const res = await fetch("/api/evaluation/recompute", { method: "POST" });
+  const data = await res.json().catch(() => ({}));
+  if (!res.ok) throw new Error(data.error || "Failed to recompute evaluation metrics");
   return data;
 }

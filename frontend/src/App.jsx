@@ -174,8 +174,8 @@ export default function App() {
         feature_count: 40,
         sample_rate: 16000,
         segment_seconds: 3.0,
-        test_accuracy_segment: "66.8%",
-        test_accuracy_recording: "76.9%",
+        test_accuracy_segment: "87.85%",
+        test_accuracy_recording: "100.00%",
       },
     };
     setActiveReportData(reportObj);
@@ -213,11 +213,13 @@ export default function App() {
 
       </header>
 
-      {/* Numerical Side Navigation */}
-      <NumericalNav
-        activeScreen={activeScreen}
-        onNavigate={(screenKey) => setActiveScreen(screenKey)}
-      />
+      {/* Numerical Side Navigation (hidden on result page to keep full-width dashboard clean) */}
+      {activeScreen !== "result" && (
+        <NumericalNav
+          activeScreen={activeScreen}
+          onNavigate={(screenKey) => setActiveScreen(screenKey)}
+        />
+      )}
 
       {/* Screen Canvas Area */}
       <main className="screen-wrapper">
@@ -237,6 +239,7 @@ export default function App() {
           <ResultScreen
             result={result}
             onReset={() => setActiveScreen("analysis")}
+            onNavigate={(screen) => setActiveScreen(screen)}
             onOpenReport={() => setActiveReportData(result)}
           />
         )}

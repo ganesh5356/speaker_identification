@@ -15,7 +15,7 @@ import TranscribedWords from '../components/AnalysisResult/TranscribedWords';
 import LowConfidenceTips from '../components/AnalysisResult/LowConfidenceTips';
 import DownloadReport from '../components/AnalysisResult/DownloadReport';
 
-export default function ResultScreen({ result, onReset }) {
+export default function ResultScreen({ result, onReset, onNavigate }) {
   // Normalize incoming result or fallback to standard mock object
   const data = normalizeResultData(result);
   const { isUnknown: confidenceIsLow, level } = getConfidenceState(data.confidence, data.threshold);
@@ -26,13 +26,24 @@ export default function ResultScreen({ result, onReset }) {
       {/* Top Console Navigation Bar */}
       <div className="console-nav-header">
         <div className="console-title-group">
-          <span className="text-label">04 / VOICE INTELLIGENCE CONSOLE</span>
+          <span className="text-label">03 / VOICE INTELLIGENCE CONSOLE</span>
           <span className="console-status-dot green"></span>
           <span className="console-status-text">ANALYSIS COMPLETE</span>
         </div>
-        <button className="btn-action reset-btn" onClick={onReset}>
-          ↻ RUN NEW ANALYSIS
-        </button>
+        <div className="console-nav-actions" style={{ display: "flex", gap: "10px", alignItems: "center" }}>
+          {onNavigate && (
+            <button
+              className="btn-action secondary-nav-btn"
+              onClick={() => onNavigate("entry")}
+              title="Return to Home Screen"
+            >
+              ← HOME
+            </button>
+          )}
+          <button className="btn-action reset-btn" onClick={onReset}>
+            ↻ RUN NEW ANALYSIS
+          </button>
+        </div>
       </div>
 
       {/* Main Analysis Console Container */}

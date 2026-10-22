@@ -947,8 +947,23 @@ button {
 .info-row { display: flex; justify-content: space-between; }
 
 /* SCREEN 06 — DEVELOPER EVALUATION VIEW */
-.screen-evaluation { display: flex; flex-direction: column; align-items: center; width: 100%; max-width: 800px; gap: 24px; }
+.screen-evaluation { display: flex; flex-direction: column; align-items: center; width: 100%; max-width: 960px; gap: 24px; }
 .eval-header { text-align: center; }
+.eval-status-row { display: flex; align-items: center; justify-content: center; gap: 8px; margin-bottom: 6px; }
+.live-pulse-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent-emerald); box-shadow: 0 0 8px var(--accent-emerald); animation: pulse 2s infinite; }
+
+.eval-toolbar-panel { width: 100%; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; padding: 12px 18px; background: var(--bg-card); border: 1px solid var(--border-dim); border-radius: var(--radius-md); box-shadow: var(--shadow-card); }
+.eval-meta-group { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.eval-pill { font-family: var(--font-mono); font-size: 0.72rem; padding: 4px 10px; border-radius: var(--radius-full); background: var(--bg-card-hover); border: 1px solid var(--border-dim); color: var(--text-main); }
+.eval-pill.muted { color: var(--text-muted); }
+.eval-actions-group { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.btn-eval-action { font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; padding: 6px 14px; border-radius: var(--radius-full); border: 1px solid var(--border-bright); background: var(--bg-card-hover); color: var(--text-main); cursor: pointer; transition: all 0.2s ease; }
+.btn-eval-action:hover { border-color: var(--accent-emerald); color: var(--accent-emerald); }
+.btn-eval-action.primary { background: var(--accent-emerald); color: #020617; border-color: var(--accent-emerald); }
+.btn-eval-action.primary:hover { filter: brightness(1.1); color: #000; }
+.btn-eval-action:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.eval-error-banner { width: 100%; padding: 12px 16px; border-radius: var(--radius-md); background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.3); color: #ef4444; display: flex; justify-content: space-between; align-items: center; font-family: var(--font-mono); font-size: 0.75rem; }
 
 .eval-summary-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; width: 100%; }
 @media (max-width: 650px) { .eval-summary-grid { grid-template-columns: 1fr; } }
@@ -959,13 +974,18 @@ button {
 .eval-card-sub { font-family: var(--font-mono); font-size: 0.68rem; color: var(--text-dim); }
 
 .eval-table-box { width: 100%; padding: 24px; border-radius: var(--radius-md); background: var(--bg-card); border: 1px solid var(--border-dim); box-shadow: var(--shadow-card); }
-.table-title { margin-bottom: 16px; display: block; }
+.eval-table-header-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 8px; }
+.table-title { margin-bottom: 0; display: block; }
+.matrix-badge { font-family: var(--font-mono); font-size: 0.68rem; color: var(--text-muted); }
 .eval-table-wrapper { overflow-x: auto; }
 .eval-table { width: 100%; border-collapse: collapse; font-family: var(--font-mono); font-size: 0.8rem; text-align: left; }
 .eval-table th { padding: 10px; border-bottom: 1px solid var(--border-bright); color: var(--text-muted); font-size: 0.7rem; }
 .eval-table td { padding: 10px; border-bottom: 1px solid var(--border-dim); }
 .eval-table .spk-col { font-weight: 700; color: var(--text-main); }
 .eval-table .f1-col { color: var(--accent-primary); font-weight: 700; }
+.eval-status-pill { font-family: var(--font-mono); font-size: 0.65rem; font-weight: 700; padding: 2px 8px; border-radius: 9999px; text-transform: uppercase; }
+.eval-status-pill.ok { background: rgba(16, 185, 129, 0.15); color: var(--accent-emerald); border: 1px solid rgba(16, 185, 129, 0.3); }
+.eval-status-pill.pending { background: rgba(245, 158, 11, 0.15); color: #f59e0b; border: 1px solid rgba(245, 158, 11, 0.3); }
 
 .eval-matrix-section { width: 100%; padding: 24px; border-radius: var(--radius-md); background: var(--bg-card); border: 1px solid var(--border-dim); box-shadow: var(--shadow-card); }
 .eval-report-text { font-family: var(--font-mono); font-size: 0.78rem; line-height: 1.5; color: var(--text-main); white-space: pre-wrap; margin-top: 14px; padding: 14px; border-radius: var(--radius-sm); background: var(--bg-card-hover); border: 1px solid var(--border-dim); }

@@ -53,7 +53,7 @@ export default function EntryScreen({ onEnter }) {
         <div className="entry-features-pills">
           <span className="entry-pill">
             <Users size={12} className="text-emerald" />
-            <span>65+ Enrolled Speakers</span>
+            <span>15+ Enrolled Speakers</span>
           </span>
           <span className="entry-pill">
             <Cpu size={12} className="text-cyan" />
