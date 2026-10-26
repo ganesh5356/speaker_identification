@@ -42,6 +42,23 @@ export default function AnalysisReportModal({
       test_accuracy_recording: "76.9%",
     },
     probabilities = {},
+    authenticity = {
+      classification: "Human",
+      is_human: true,
+      confidence: 94.2,
+      human_probability: 94.2,
+      synthetic_probability: 5.8,
+      risk_level: "LOW",
+      verdict_title: "Verified Authentic Human Voice",
+      explanation: "Biological vocal tract characteristics confirmed.",
+      indicators: {
+        neural_score: 94.2,
+        pitch_dynamics: "Organic Human Dynamics",
+        avg_pitch_hz: 185.0,
+        spectral_naturalness: 92.5,
+        vocoder_artifacts: "None (Authentic Biological Acoustics)"
+      }
+    },
   } = reportData;
 
   const confPct = Math.round((confidence || 0) * 100);
@@ -96,6 +113,48 @@ export default function AnalysisReportModal({
                     ⚠️ UNKNOWN SPEAKER / LOW CONFIDENCE MATCH
                   </span>
                 )}
+              </div>
+            </div>
+          </div>
+
+          {/* 1.5. VOICE AUTHENTICITY & DEEPFAKE FORENSICS */}
+          <div className="report-section authenticity-report-section">
+            <span className="text-label">VOICE AUTHENTICITY & DEEPFAKE FORENSICS</span>
+            <div className={`auth-report-banner ${authenticity.is_human ? 'human' : 'synthetic'}`}>
+              <div className="auth-report-left">
+                <span className="auth-report-verdict">
+                  {authenticity.is_human ? '👤 VERIFIED AUTHENTIC HUMAN VOICE' : '🤖 AI-GENERATED / DEEPFAKE SPEECH'}
+                </span>
+                <span className="auth-report-sub">{authenticity.verdict_title}</span>
+                <p className="auth-report-desc">{authenticity.explanation}</p>
+              </div>
+              <div className="auth-report-right">
+                <span className="auth-report-score">{authenticity.confidence}%</span>
+                <span className="auth-report-score-lbl">
+                  {authenticity.is_human ? 'HUMAN CONFIDENCE' : 'SYNTHETIC CONFIDENCE'}
+                </span>
+                <span className={`risk-tag risk-${(authenticity.risk_level || 'low').toLowerCase()}`}>
+                  {authenticity.risk_level} DEEPFAKE RISK
+                </span>
+              </div>
+            </div>
+
+            <div className="auth-report-indicators">
+              <div className="ind-item">
+                <span className="ind-item-lbl">HUMAN PROBABILITY</span>
+                <span className="ind-item-val">{authenticity.human_probability}%</span>
+              </div>
+              <div className="ind-item">
+                <span className="ind-item-lbl">SYNTHETIC PROBABILITY</span>
+                <span className="ind-item-val">{authenticity.synthetic_probability}%</span>
+              </div>
+              <div className="ind-item">
+                <span className="ind-item-lbl">PITCH DYNAMICS</span>
+                <span className="ind-item-val">{authenticity.indicators?.pitch_dynamics || 'Natural'}</span>
+              </div>
+              <div className="ind-item">
+                <span className="ind-item-lbl">VOCODER ARTIFACTS</span>
+                <span className="ind-item-val">{authenticity.indicators?.vocoder_artifacts || 'None Detected'}</span>
               </div>
             </div>
           </div>

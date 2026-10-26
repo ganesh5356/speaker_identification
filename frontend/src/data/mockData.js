@@ -76,6 +76,23 @@ export const MOCK_RESULT = {
   multi_speaker: false,
   speaker_count: 1,
   active_speakers: ["VOICEPRINT 01"],
+  authenticity: {
+    classification: "Human",
+    is_human: true,
+    confidence: 94.2,
+    human_probability: 94.2,
+    synthetic_probability: 5.8,
+    risk_level: "LOW",
+    verdict_title: "Verified Authentic Human Voice",
+    explanation: "Biological vocal tract characteristics confirmed (94.2% authentic human confidence). Organic pitch intonation, natural vocal resonances, and authentic speech dynamics detected.",
+    indicators: {
+      neural_score: 94.2,
+      pitch_dynamics: "Organic Human Dynamics (185 Hz avg, ±42 Hz)",
+      avg_pitch_hz: 185.0,
+      spectral_naturalness: 92.5,
+      vocoder_artifacts: "None (Authentic Biological Acoustics)"
+    }
+  },
   summary: "Single voiceprint verified with 98.4% similarity.",
   timeline: [
     { start_time: 0.0, end_time: 3.0, speaker: "VOICEPRINT 01", is_known: true, similarity: 0.98 },
