@@ -1,5 +1,4 @@
-import React from 'react';
-import { ArrowRight, Volume2, Sparkles, Users, Cpu } from 'lucide-react';
+import { ArrowRight, Volume2, Sparkles, Users, Cpu, ShieldCheck } from 'lucide-react';
 
 export default function EntryScreen({ onEnter }) {
   return (
@@ -37,7 +36,7 @@ export default function EntryScreen({ onEnter }) {
         {/* System Tag */}
         <div className="entry-tag-badge">
           <Sparkles size={12} className="text-violet" />
-          <span>NEURAL SPEECH & SPEAKER AI</span>
+          <span>NEURAL SPEECH & BIOMETRIC AI</span>
         </div>
         
         {/* Main Display Heading */}
@@ -46,14 +45,18 @@ export default function EntryScreen({ onEnter }) {
         </h1>
 
         <p className="entry-desc-modern">
-          Acoustic voiceprint recognition and offline speech-to-text transcription powered by deep learning.
+          Acoustic voiceprint recognition, AI vs. Human deepfake detection, and offline speech-to-text transcription.
         </p>
 
         {/* Feature Highlights Pills */}
         <div className="entry-features-pills">
           <span className="entry-pill">
             <Users size={12} className="text-emerald" />
-            <span>15+ Enrolled Speakers</span>
+            <span>12+ Enrolled Speakers</span>
+          </span>
+          <span className="entry-pill">
+            <ShieldCheck size={12} className="text-violet" />
+            <span>AI vs. Human Deepfake Detection</span>
           </span>
           <span className="entry-pill">
             <Cpu size={12} className="text-cyan" />

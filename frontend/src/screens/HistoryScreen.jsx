@@ -21,7 +21,14 @@ export default function HistoryScreen({
               <span className="seq-num">{item.sampleNumber || item.id}</span>
               
               <div className="seq-main">
-                <span className="seq-pct">{item.confidence}%</span>
+                <div className="seq-top-metrics">
+                  <span className="seq-pct">{item.confidence}%</span>
+                  {item.authenticity && (
+                    <span className={`seq-auth-badge ${item.authenticity.is_human ? 'human' : 'synthetic'}`}>
+                      {item.authenticity.is_human ? '👤 HUMAN' : '🤖 AI-GEN'}
+                    </span>
+                  )}
+                </div>
                 <h3 className="seq-status">{item.status || item.speaker}</h3>
                 <span className="seq-time">{item.timestamp || "RECENT"}</span>
               </div>

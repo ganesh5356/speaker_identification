@@ -70,6 +70,7 @@ export default function App() {
         confidence: confPct,
         timestamp: new Date().toLocaleTimeString(),
         isKnown: data.is_known,
+        authenticity: data.authenticity,
         fullResult: data,
       };
       setHistory((prev) => [newEntry, ...prev].slice(0, 10));
@@ -83,6 +84,7 @@ export default function App() {
         confidence: 96.4,
         timestamp: new Date().toLocaleTimeString(),
         isKnown: true,
+        authenticity: MOCK_RESULT.authenticity,
         fullResult: {
           ...MOCK_RESULT,
           sampleNumber: numStr,

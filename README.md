@@ -11,17 +11,19 @@ This repository provides an end-to-end voice intelligence solution that identifi
 - **Acoustic Neural Network**: Bi-directional LSTM (BiLSTM) model trained on extracted Mel-Frequency Cepstral Coefficients (MFCCs).
 - **Dark Cinematic Visual Identity**: Sleek dark charcoal interface with glowing purple/emerald accents, ambient grid background, and responsive `01` / `02` / `03` / `04` step navigation.
 - **Voice Intelligence Analysis Console**:
-  1. **Predicted Speaker**: Large bold identity display with automatic `UNKNOWN SPEAKER` fallback.
-  2. **Confidence Score**: Dynamic threshold badges (`HIGH` $\ge 80\%$, `MEDIUM` $60\%-79.99\%$, `LOW` $< 60\%$).
-  3. **Unknown Speaker Warning Banner**: Subtle alert when confidence falls below threshold.
-  4. **Probability Distribution Chart**: Horizontal bar chart comparing prediction probabilities for all enrolled speakers.
-  5. **Audio Details Grid**: Compact metadata display (`FILE`, `DURATION`, `SAMPLE RATE`, `ANALYZED AT`).
-  6. **Audio Quality Check**: Status flags for length, noise level, and volume.
-  7. **Waveform Analyzer**: Smooth SVG curve with pulse-bar audio signal visualizer.
-  8. **Spectrogram / MFCC Heatmap**: Acoustic feature coefficient map across time frames.
-  9. **Plain-Language Summary**: Human-readable narrative explanation.
-  10. **Low-Confidence Tips**: Contextual guidance on improving audio recording quality.
-  11. **PDF Report Download**: One-click printable PDF report generation.
+  1. **Voice Authenticity & Deepfake Forensics**: Real-time neural sequence classification (Wav2Vec2 ONNX) and acoustic spectral analysis distinguishing **Authentic Human Voice** from **AI-Generated / Deepfake Speech** with dual comparative probability meters and vocoder artifact analysis.
+  2. **Predicted Speaker**: Large bold identity display with automatic `UNKNOWN SPEAKER` fallback.
+  3. **Confidence Score**: Dynamic threshold badges (`HIGH` $\ge 80\%$, `MEDIUM` $60\%-79.99\%$, `LOW` $< 60\%$).
+  4. **Unknown Speaker Warning Banner**: Subtle alert when confidence falls below threshold.
+  5. **Probability Distribution Chart**: Horizontal bar chart comparing prediction probabilities for all enrolled speakers.
+  6. **Audio Details Grid**: Compact metadata display (`FILE`, `DURATION`, `SAMPLE RATE`, `ANALYZED AT`).
+  7. **Audio Quality Check**: Status flags for length, noise level, and volume.
+  8. **Waveform Analyzer**: Smooth SVG curve with pulse-bar audio signal visualizer.
+  9. **Spectrogram / MFCC Heatmap**: Acoustic feature coefficient map across time frames.
+  10. **Offline Speech-to-Text Transcription**: 100% offline Whisper neural transcription of spoken words.
+  11. **Plain-Language Summary**: Human-readable narrative explanation.
+  12. **Low-Confidence Tips**: Contextual guidance on improving audio recording quality.
+  13. **PDF Report Download**: One-click printable PDF report generation.
 - **Multi-Speaker Diarization**: Support for detecting multiple speakers in a single audio segment.
 - **Developer Evaluation Suite**: Confusion matrix plots, per-speaker precision/recall/F1 metrics.
 

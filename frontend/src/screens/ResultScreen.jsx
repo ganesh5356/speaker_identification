@@ -14,6 +14,7 @@ import AnalysisSummary from '../components/AnalysisResult/AnalysisSummary';
 import TranscribedWords from '../components/AnalysisResult/TranscribedWords';
 import LowConfidenceTips from '../components/AnalysisResult/LowConfidenceTips';
 import DownloadReport from '../components/AnalysisResult/DownloadReport';
+import VoiceAuthenticity from '../components/AnalysisResult/VoiceAuthenticity';
 
 export default function ResultScreen({ result, onReset, onNavigate }) {
   // Normalize incoming result or fallback to standard mock object
@@ -70,6 +71,11 @@ export default function ResultScreen({ result, onReset, onNavigate }) {
             <UnknownSpeakerWarning confidence={data.confidence} threshold={data.threshold} />
           </section>
         )}
+
+        {/* VOICE AUTHENTICITY / AI-GENERATED vs HUMAN DETECTION */}
+        <section className="console-authenticity-section">
+          <VoiceAuthenticity authenticity={data.authenticity} />
+        </section>
 
         {/* 2-COLUMN INTELLIGENCE GRID */}
         <div className="console-grid">
