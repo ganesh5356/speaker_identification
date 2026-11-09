@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import { Sun, Moon, BarChart3, Activity, Sparkles, Radio } from 'lucide-react';
 import AmbientBackground from "./components/AmbientBackground.jsx";
 import NumericalNav from "./components/NumericalNav.jsx";
 import EntryScreen from "./screens/EntryScreen.jsx";
@@ -48,7 +47,6 @@ export default function App() {
       .then((data) => setHealth({ state: "online", speakers: data.speakers }))
       .catch(() => setHealth({ state: "offline", speakers: [] }));
   }, []);
-
 
   const analyzeAudio = async (blob) => {
     setInteractionState("analyzing");
@@ -185,90 +183,37 @@ export default function App() {
   };
 
   return (
-    <div className={`app-container screen-${activeScreen}`}>
+    <div className="app-container">
       <AmbientBackground />
 
-      {/* Top 4 Features Header - Full Width Spacious Layout */}
-      <header className="system-bar-modern">
-        <div className="system-bar-grid">
-          
-          {/* Feature 1: Brand & Core Identity */}
-          <div
-            className="system-feature-card brand-card"
-            onClick={() => setActiveScreen("entry")}
-            role="button"
-            tabIndex={0}
-            title="Return to System Home"
-          >
-            <div className="feature-icon-badge brand-glow">
-              <span className="pulse-beacon-dot" />
-            </div>
-            <div className="feature-text-block">
-              <span className="feature-kicker">BIOMETRIC AI</span>
-              <h2 className="feature-headline">VOICE INTELLIGENCE</h2>
-            </div>
-          </div>
-
-          {/* Feature 2: System Telemetry & Live Telemetry */}
-          <div className={`system-feature-card status-card ${health.state === "online" ? "online" : "standby"}`}>
-            <div className="feature-icon-badge status-glow">
-              <span className={`status-indicator-ring ${health.state === "online" ? "active" : ""}`} />
-            </div>
-            <div className="feature-text-block">
-              <span className="feature-kicker">SYSTEM TELEMETRY</span>
-              <h2 className="feature-headline">
-                {health.state === "online" ? "SYSTEM ONLINE" : "STANDBY MODE"}
-              </h2>
-            </div>
-          </div>
-
-          {/* Feature 3: Evaluation Metrics Console */}
+      {/* Top Header Bar */}
+      <header className="system-bar">
+        <div className="system-title">
+          <span className="status-dot" />
+          <span className="system-tag">VOICE INTELLIGENCE</span>
+        </div>
+        <div className="system-actions-right">
           <button
-            className={`system-feature-card action-card eval-card ${activeScreen === "evaluation" ? "active" : ""}`}
-            onClick={() => setActiveScreen(activeScreen === "evaluation" ? "analysis" : "evaluation")}
-            title="Toggle Model Performance, Precision & Confusion Matrix"
-          >
-            <div className="feature-icon-badge eval-glow">
-              <BarChart3 size={20} className="text-violet" />
-            </div>
-            <div className="feature-text-block">
-              <span className="feature-kicker">MODEL BENCHMARKS</span>
-              <h2 className="feature-headline">
-                {activeScreen === "evaluation" ? "CLOSE METRICS ✕" : "EVALUATION METRICS"}
-              </h2>
-            </div>
-          </button>
-
-          {/* Feature 4: Theme Mode Switcher */}
-          <button
-            className="system-feature-card action-card theme-card"
+            className="system-tag btn-theme-toggle"
             onClick={toggleTheme}
             aria-label="Toggle light or dark mode theme"
             title={`Switch to ${theme === "dark" ? "Light" : "Dark"} mode`}
           >
-            <div className="feature-icon-badge theme-glow">
-              {theme === "dark" ? (
-                <Sun size={20} className="text-amber" />
-              ) : (
-                <Moon size={20} className="text-cyan" />
-              )}
-            </div>
-            <div className="feature-text-block">
-              <span className="feature-kicker">INTERFACE MODE</span>
-              <h2 className="feature-headline">
-                {theme === "dark" ? "LIGHT THEME ☀" : "DARK THEME ☾"}
-              </h2>
-            </div>
+            {theme === "dark" ? "☀ LIGHT" : "☾ DARK"}
           </button>
-
+          <button
+            className="system-tag btn-eval-toggle"
+            onClick={() => setActiveScreen(activeScreen === "evaluation" ? "analysis" : "evaluation")}
+          >
+            {activeScreen === "evaluation" ? "✕ CLOSE EVALUATION" : "📊 EVALUATION METRICS"}
+          </button>
+          <span className="system-tag">
+            {health.state === "online" ? "SYSTEM ONLINE" : "STANDBY MODE"}
+          </span>
         </div>
       </header>
 
-      {/* Numerical Navigation:
-          - Modern centered floating bottom island dock (aesthetic glassmorphism across all screens)
-          - Desktop: labeled pill dock with active glow dot
-          - Mobile: compact circular numerical pill dock
-      */}
+      {/* Numerical Navigation (Persistent across all screens including page 3 Result) */}
       <NumericalNav
         activeScreen={activeScreen}
         onNavigate={(screenKey) => setActiveScreen(screenKey)}
@@ -327,7 +272,6 @@ export default function App() {
           }}
         />
       )}
-
     </div>
   );
 }
