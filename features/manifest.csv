@@ -1,285 +1,477 @@
 ,path,speaker,split,chunk_id
-0,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\ashwini\WhatsApp Audio 2026-10-02 at 7.01.27 PM.wav,ashwini,train,0
-1,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\ashwini\WhatsApp Audio 2026-10-02 at 7.01.27 PM.wav,ashwini,train,1
-2,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\ashwini\WhatsApp Audio 2026-10-02 at 7.01.27 PM.wav,ashwini,train,2
-3,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\ashwini\WhatsApp Audio 2026-10-02 at 7.01.27 PM.wav,ashwini,train,3
-4,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\ashwini\WhatsApp Audio 2026-10-02 at 7.01.27 PM.wav,ashwini,train,4
-5,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\ashwini\WhatsApp Audio 2026-10-02 at 7.01.27 PM.wav,ashwini,val,5
-6,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\ashwini\WhatsApp Audio 2026-10-02 at 7.01.27 PM.wav,ashwini,val,6
-7,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\ashwini\WhatsApp Audio 2026-10-02 at 7.01.27 PM.wav,ashwini,test,7
-8,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\ashwini\WhatsApp Audio 2026-10-02 at 7.01.39 PM.wav,ashwini,val,8
-9,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\ashwini\WhatsApp Audio 2026-10-02 at 7.01.39 PM.wav,ashwini,train,9
-10,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\ashwini\WhatsApp Audio 2026-10-02 at 7.01.39 PM.wav,ashwini,train,10
-11,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\ashwini\WhatsApp Audio 2026-10-02 at 7.01.39 PM.wav,ashwini,test,11
-12,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\ashwini\WhatsApp Audio 2026-10-02 at 7.01.39 PM.wav,ashwini,train,12
-13,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\ashwini\WhatsApp Audio 2026-10-02 at 7.01.39 PM.wav,ashwini,train,13
-14,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\ashwini\WhatsApp Audio 2026-10-02 at 7.01.39 PM.wav,ashwini,test,14
-15,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\ashwini\WhatsApp Audio 2026-10-02 at 7.01.39 PM.wav,ashwini,train,15
-16,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\ashwini\WhatsApp Audio 2026-10-02 at 7.01.55 PM.wav,ashwini,train,16
-17,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\ashwini\WhatsApp Audio 2026-10-02 at 7.01.55 PM.wav,ashwini,train,17
-18,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\ashwini\WhatsApp Audio 2026-10-02 at 7.01.55 PM.wav,ashwini,train,18
-19,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\ashwini\WhatsApp Audio 2026-10-02 at 7.01.55 PM.wav,ashwini,val,19
-20,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\ashwini\WhatsApp Audio 2026-10-02 at 7.01.55 PM.wav,ashwini,train,20
-21,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\ashwini\WhatsApp Audio 2026-10-02 at 7.01.55 PM.wav,ashwini,train,21
-22,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\ashwini\WhatsApp Audio 2026-10-02 at 7.01.55 PM.wav,ashwini,train,22
-23,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\ashwini\WhatsApp Audio 2026-10-02 at 7.01.55 PM.wav,ashwini,test,23
-24,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Bindu\WhatsApp Audio 2026-10-01 at 11.50.46 AM (1).wav,Bindu,train,24
-25,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Bindu\WhatsApp Audio 2026-10-01 at 11.50.46 AM (1).wav,Bindu,train,25
-26,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Bindu\WhatsApp Audio 2026-10-01 at 11.50.46 AM (1).wav,Bindu,train,26
-27,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Bindu\WhatsApp Audio 2026-10-01 at 11.50.46 AM (1).wav,Bindu,train,27
-28,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Bindu\WhatsApp Audio 2026-10-01 at 11.50.46 AM (1).wav,Bindu,train,28
-29,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Bindu\WhatsApp Audio 2026-10-01 at 11.50.46 AM (1).wav,Bindu,train,29
-30,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Bindu\WhatsApp Audio 2026-10-01 at 11.50.46 AM (1).wav,Bindu,train,30
-31,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Bindu\WhatsApp Audio 2026-10-01 at 11.50.46 AM.wav,Bindu,val,31
-32,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Bindu\WhatsApp Audio 2026-10-01 at 11.50.46 AM.wav,Bindu,train,32
-33,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Bindu\WhatsApp Audio 2026-10-01 at 11.50.46 AM.wav,Bindu,test,33
-34,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Bindu\WhatsApp Audio 2026-10-01 at 11.50.46 AM.wav,Bindu,val,34
-35,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Bindu\WhatsApp Audio 2026-10-01 at 11.50.46 AM.wav,Bindu,train,35
-36,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Bindu\WhatsApp Audio 2026-10-01 at 11.50.46 AM.wav,Bindu,val,36
-37,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Bindu\WhatsApp Audio 2026-10-01 at 11.50.46 AM.wav,Bindu,train,37
-38,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Bindu\WhatsApp Audio 2026-10-01 at 11.50.46 AM.wav,Bindu,test,38
-39,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Bindu\WhatsApp Audio 2026-10-01 at 11.50.47 AM.wav,Bindu,train,39
-40,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Bindu\WhatsApp Audio 2026-10-01 at 11.50.47 AM.wav,Bindu,train,40
-41,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Bindu\WhatsApp Audio 2026-10-01 at 11.50.47 AM.wav,Bindu,test,41
-42,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Bindu\WhatsApp Audio 2026-10-01 at 11.50.47 AM.wav,Bindu,train,42
-43,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\deepika\deepika1.wav,deepika,train,43
-44,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\deepika\deepika1.wav,deepika,train,44
-45,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\deepika\deepika1.wav,deepika,train,45
-46,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\deepika\deepika1.wav,deepika,train,46
-47,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\deepika\deepika1.wav,deepika,train,47
-48,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\deepika\deepika1.wav,deepika,train,48
-49,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\deepika\deepika1.wav,deepika,val,49
-50,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\deepika\deepika1.wav,deepika,train,50
-51,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\deepika\deepika1.wav,deepika,train,51
-52,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\deepika\deepika2.wav,deepika,train,52
-53,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\deepika\deepika2.wav,deepika,test,53
-54,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\deepika\deepika2.wav,deepika,train,54
-55,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\deepika\deepika2.wav,deepika,test,55
-56,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\deepika\deepika2.wav,deepika,train,56
-57,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\deepika\deepika2.wav,deepika,test,57
-58,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\deepika\deepika2.wav,deepika,train,58
-59,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\deepika\deepika2.wav,deepika,train,59
-60,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\deepika\deepika3.wav,deepika,val,60
-61,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\deepika\deepika3.wav,deepika,train,61
-62,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\deepika\deepika3.wav,deepika,train,62
-63,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\deepika\deepika3.wav,deepika,train,63
-64,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\deepika\deepika3.wav,deepika,val,64
-65,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\deepika\deepika3.wav,deepika,val,65
-66,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\deepika\deepika3.wav,deepika,train,66
-67,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\deepika\deepika3.wav,deepika,train,67
-68,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\deepika\deepika3.wav,deepika,test,68
-69,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.08 AM.wav,Ganesh,train,69
-70,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.08 AM.wav,Ganesh,val,70
-71,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.08 AM.wav,Ganesh,train,71
-72,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.08 AM.wav,Ganesh,train,72
-73,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.08 AM.wav,Ganesh,train,73
-74,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.08 AM.wav,Ganesh,val,74
-75,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.08 AM.wav,Ganesh,test,75
-76,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.08 AM.wav,Ganesh,train,76
-77,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.08 AM.wav,Ganesh,test,77
-78,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.08 AM.wav,Ganesh,train,78
-79,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.09 AM (1).wav,Ganesh,train,79
-80,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.09 AM (1).wav,Ganesh,val,80
-81,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.09 AM (1).wav,Ganesh,train,81
-82,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.09 AM (1).wav,Ganesh,train,82
-83,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.09 AM (1).wav,Ganesh,train,83
-84,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.09 AM (1).wav,Ganesh,train,84
-85,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.09 AM (1).wav,Ganesh,train,85
-86,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.09 AM (1).wav,Ganesh,train,86
-87,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.09 AM (1).wav,Ganesh,val,87
-88,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.09 AM (1).wav,Ganesh,train,88
-89,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.09 AM (1).wav,Ganesh,train,89
-90,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.09 AM.wav,Ganesh,train,90
-91,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.09 AM.wav,Ganesh,train,91
-92,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.09 AM.wav,Ganesh,val,92
-93,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.09 AM.wav,Ganesh,train,93
-94,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.09 AM.wav,Ganesh,test,94
-95,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.09 AM.wav,Ganesh,train,95
-96,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.09 AM.wav,Ganesh,test,96
-97,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.09 AM.wav,Ganesh,train,97
-98,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.09 AM.wav,Ganesh,train,98
-99,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.09 AM.wav,Ganesh,train,99
-100,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.09 AM.wav,Ganesh,test,100
-101,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\isha\isha1.wav,isha,train,101
-102,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\isha\isha1.wav,isha,train,102
-103,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\isha\isha1.wav,isha,train,103
-104,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\isha\isha1.wav,isha,val,104
-105,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\isha\isha1.wav,isha,val,105
-106,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\isha\isha1.wav,isha,train,106
-107,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\isha\isha1.wav,isha,train,107
-108,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\isha\isha1.wav,isha,val,108
-109,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\isha\isha1.wav,isha,train,109
-110,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\isha\isha2.wav,isha,test,110
-111,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\isha\isha2.wav,isha,train,111
-112,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\isha\isha3.wav,isha,train,112
-113,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\isha\isha3.wav,isha,train,113
-114,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\isha\isha3.wav,isha,train,114
-115,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\isha\isha3.wav,isha,train,115
-116,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\isha\isha3.wav,isha,train,116
-117,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\isha\isha3.wav,isha,train,117
-118,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\isha\isha3.wav,isha,train,118
-119,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\isha\isha3.wav,isha,val,119
-120,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\isha\isha3.wav,isha,train,120
-121,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\isha\isha3.wav,isha,test,121
-122,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\isha\isha3.wav,isha,train,122
-123,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\isha\isha3.wav,isha,train,123
-124,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\isha\isha3.wav,isha,train,124
-125,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\isha\isha3.wav,isha,test,125
-126,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\isha\isha3.wav,isha,train,126
-127,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\isha\isha3.wav,isha,test,127
-128,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.20.39 PM.wav,Kumar,test,128
-129,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.20.39 PM.wav,Kumar,train,129
-130,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.20.39 PM.wav,Kumar,train,130
-131,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.20.39 PM.wav,Kumar,train,131
-132,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.20.39 PM.wav,Kumar,train,132
-133,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.20.39 PM.wav,Kumar,train,133
-134,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.20.39 PM.wav,Kumar,val,134
-135,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.20.39 PM.wav,Kumar,train,135
-136,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.20.39 PM.wav,Kumar,train,136
-137,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.22.06 PM.wav,Kumar,train,137
-138,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.22.06 PM.wav,Kumar,train,138
-139,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.22.06 PM.wav,Kumar,train,139
-140,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.22.06 PM.wav,Kumar,train,140
-141,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.22.06 PM.wav,Kumar,train,141
-142,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.22.06 PM.wav,Kumar,train,142
-143,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.22.06 PM.wav,Kumar,train,143
-144,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.22.06 PM.wav,Kumar,train,144
-145,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.22.06 PM.wav,Kumar,val,145
-146,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.23.45 PM.wav,Kumar,test,146
-147,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.23.45 PM.wav,Kumar,train,147
-148,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.23.45 PM.wav,Kumar,val,148
-149,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.23.45 PM.wav,Kumar,train,149
-150,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.23.45 PM.wav,Kumar,train,150
-151,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.23.45 PM.wav,Kumar,val,151
-152,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.23.45 PM.wav,Kumar,train,152
-153,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.23.45 PM.wav,Kumar,train,153
-154,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.23.45 PM.wav,Kumar,test,154
-155,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.23.45 PM.wav,Kumar,test,155
-156,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.12 PM.wav,Rakshitha,test,156
-157,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.12 PM.wav,Rakshitha,train,157
-158,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.12 PM.wav,Rakshitha,train,158
-159,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.12 PM.wav,Rakshitha,train,159
-160,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.12 PM.wav,Rakshitha,train,160
-161,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.12 PM.wav,Rakshitha,train,161
-162,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.12 PM.wav,Rakshitha,train,162
-163,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.12 PM.wav,Rakshitha,train,163
-164,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.12 PM.wav,Rakshitha,train,164
-165,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.12 PM.wav,Rakshitha,train,165
-166,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.13 PM (1).wav,Rakshitha,val,166
-167,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.13 PM (1).wav,Rakshitha,val,167
-168,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.13 PM (1).wav,Rakshitha,train,168
-169,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.13 PM (1).wav,Rakshitha,train,169
-170,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.13 PM (1).wav,Rakshitha,train,170
-171,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.13 PM (1).wav,Rakshitha,train,171
-172,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.13 PM (1).wav,Rakshitha,val,172
-173,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.13 PM (1).wav,Rakshitha,train,173
-174,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.13 PM (1).wav,Rakshitha,test,174
-175,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.13 PM (1).wav,Rakshitha,train,175
-176,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.13 PM.wav,Rakshitha,train,176
-177,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.13 PM.wav,Rakshitha,test,177
-178,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.13 PM.wav,Rakshitha,test,178
-179,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.13 PM.wav,Rakshitha,train,179
-180,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.13 PM.wav,Rakshitha,train,180
-181,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.13 PM.wav,Rakshitha,train,181
-182,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.13 PM.wav,Rakshitha,train,182
-183,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.13 PM.wav,Rakshitha,val,183
-184,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.13 PM.wav,Rakshitha,train,184
-185,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.13 PM.wav,Rakshitha,train,185
-186,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\sneha\WhatsApp Audio 2026-10-02 at 8.14.48 PM.wav,sneha,train,186
-187,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\sneha\WhatsApp Audio 2026-10-02 at 8.14.48 PM.wav,sneha,train,187
-188,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\sneha\WhatsApp Audio 2026-10-02 at 8.14.48 PM.wav,sneha,train,188
-189,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\sneha\WhatsApp Audio 2026-10-02 at 8.14.48 PM.wav,sneha,test,189
-190,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\sneha\WhatsApp Audio 2026-10-02 at 8.14.48 PM.wav,sneha,val,190
-191,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\sneha\WhatsApp Audio 2026-10-02 at 8.14.48 PM.wav,sneha,train,191
-192,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\sneha\WhatsApp Audio 2026-10-02 at 8.14.55 PM.wav,sneha,train,192
-193,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\sneha\WhatsApp Audio 2026-10-02 at 8.14.55 PM.wav,sneha,train,193
-194,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\sneha\WhatsApp Audio 2026-10-02 at 8.14.55 PM.wav,sneha,train,194
-195,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\sneha\WhatsApp Audio 2026-10-02 at 8.14.55 PM.wav,sneha,test,195
-196,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\sneha\WhatsApp Audio 2026-10-02 at 8.14.55 PM.wav,sneha,train,196
-197,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\sneha\WhatsApp Audio 2026-10-02 at 8.14.55 PM.wav,sneha,train,197
-198,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\sneha\WhatsApp Audio 2026-10-02 at 8.14.55 PM.wav,sneha,test,198
-199,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\sneha\WhatsApp Audio 2026-10-02 at 8.14.55 PM.wav,sneha,val,199
-200,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\sneha\WhatsApp Audio 2026-10-02 at 8.14.55 PM.wav,sneha,train,200
-201,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\sneha\WhatsApp Audio 2026-10-02 at 8.15.02 PM.wav,sneha,train,201
-202,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\sneha\WhatsApp Audio 2026-10-02 at 8.15.02 PM.wav,sneha,train,202
-203,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\sneha\WhatsApp Audio 2026-10-02 at 8.15.02 PM.wav,sneha,train,203
-204,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\sneha\WhatsApp Audio 2026-10-02 at 8.15.02 PM.wav,sneha,train,204
-205,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\sneha\WhatsApp Audio 2026-10-02 at 8.15.02 PM.wav,sneha,train,205
-206,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\sneha\WhatsApp Audio 2026-10-02 at 8.15.02 PM.wav,sneha,train,206
-207,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\sneha\WhatsApp Audio 2026-10-02 at 8.15.02 PM.wav,sneha,val,207
-208,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\sneha\WhatsApp Audio 2026-10-02 at 8.15.02 PM.wav,sneha,train,208
-209,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Summaiya\WhatsApp Audio 2026-10-02 at 11.45.40 AM.wav,Summaiya,train,209
-210,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Summaiya\WhatsApp Audio 2026-10-02 at 11.45.40 AM.wav,Summaiya,test,210
-211,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Summaiya\WhatsApp Audio 2026-10-02 at 11.45.44 AM.wav,Summaiya,train,211
-212,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Summaiya\WhatsApp Audio 2026-10-02 at 11.45.44 AM.wav,Summaiya,train,212
-213,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Summaiya\WhatsApp Audio 2026-10-02 at 11.45.47 AM.wav,Summaiya,train,213
-214,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Summaiya\WhatsApp Audio 2026-10-02 at 11.45.47 AM.wav,Summaiya,val,214
-215,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\sushmitha\susmita1.wav,sushmitha,val,215
-216,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\sushmitha\susmita1.wav,sushmitha,train,216
-217,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\sushmitha\susmita1.wav,sushmitha,test,217
-218,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\sushmitha\susmita1.wav,sushmitha,train,218
-219,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\sushmitha\susmita1.wav,sushmitha,train,219
-220,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\sushmitha\susmita1.wav,sushmitha,train,220
-221,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\sushmitha\susmita1.wav,sushmitha,train,221
-222,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\sushmitha\susmita1.wav,sushmitha,train,222
-223,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\sushmitha\susmita1.wav,sushmitha,train,223
-224,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\sushmitha\susmita2.wav,sushmitha,train,224
-225,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\sushmitha\susmita2.wav,sushmitha,train,225
-226,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\sushmitha\susmita2.wav,sushmitha,train,226
-227,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\sushmitha\susmita2.wav,sushmitha,val,227
-228,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\sushmitha\susmita2.wav,sushmitha,train,228
-229,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\sushmitha\susmita2.wav,sushmitha,val,229
-230,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\sushmitha\susmita2.wav,sushmitha,train,230
-231,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\sushmitha\susmita2.wav,sushmitha,test,231
-232,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\sushmitha\susmita3.wav,sushmitha,train,232
-233,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\sushmitha\susmita3.wav,sushmitha,val,233
-234,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\sushmitha\susmita3.wav,sushmitha,test,234
-235,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\sushmitha\susmita3.wav,sushmitha,train,235
-236,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\sushmitha\susmita3.wav,sushmitha,train,236
-237,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\sushmitha\susmita3.wav,sushmitha,test,237
-238,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\sushmitha\susmita3.wav,sushmitha,train,238
-239,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\sushmitha\susmita3.wav,sushmitha,train,239
-240,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\ummul\WhatsApp Audio 2026-10-02 at 6.48.53 PM.wav,ummul,train,240
-241,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\ummul\WhatsApp Audio 2026-10-02 at 6.48.53 PM.wav,ummul,train,241
-242,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\ummul\WhatsApp Audio 2026-10-02 at 6.48.53 PM.wav,ummul,train,242
-243,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\ummul\WhatsApp Audio 2026-10-02 at 6.48.53 PM.wav,ummul,test,243
-244,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\ummul\WhatsApp Audio 2026-10-02 at 6.48.53 PM.wav,ummul,val,244
-245,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\ummul\WhatsApp Audio 2026-10-02 at 6.48.53 PM.wav,ummul,val,245
-246,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\ummul\WhatsApp Audio 2026-10-02 at 6.49.00 PM.wav,ummul,train,246
-247,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\ummul\WhatsApp Audio 2026-10-02 at 6.49.00 PM.wav,ummul,train,247
-248,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\ummul\WhatsApp Audio 2026-10-02 at 6.49.00 PM.wav,ummul,train,248
-249,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\ummul\WhatsApp Audio 2026-10-02 at 6.49.00 PM.wav,ummul,train,249
-250,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\ummul\WhatsApp Audio 2026-10-02 at 6.49.00 PM.wav,ummul,test,250
-251,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\ummul\WhatsApp Audio 2026-10-02 at 6.49.09 PM.wav,ummul,train,251
-252,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\ummul\WhatsApp Audio 2026-10-02 at 6.49.09 PM.wav,ummul,train,252
-253,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\ummul\WhatsApp Audio 2026-10-02 at 6.49.09 PM.wav,ummul,train,253
-254,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\ummul\WhatsApp Audio 2026-10-02 at 6.49.09 PM.wav,ummul,train,254
-255,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\ummul\WhatsApp Audio 2026-10-02 at 6.49.09 PM.wav,ummul,test,255
-256,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\ummul\WhatsApp Audio 2026-10-02 at 6.49.09 PM.wav,ummul,val,256
-257,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.36 PM (1).wav,Vardhan,train,257
-258,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.36 PM (1).wav,Vardhan,train,258
-259,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.36 PM (1).wav,Vardhan,train,259
-260,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.36 PM (1).wav,Vardhan,train,260
-261,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.36 PM (1).wav,Vardhan,val,261
-262,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.36 PM (1).wav,Vardhan,train,262
-263,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.36 PM (1).wav,Vardhan,val,263
-264,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.36 PM (1).wav,Vardhan,train,264
-265,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.36 PM (1).wav,Vardhan,test,265
-266,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.36 PM.wav,Vardhan,train,266
-267,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.36 PM.wav,Vardhan,train,267
-268,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.36 PM.wav,Vardhan,train,268
-269,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.36 PM.wav,Vardhan,train,269
-270,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.36 PM.wav,Vardhan,train,270
-271,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.36 PM.wav,Vardhan,val,271
-272,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.36 PM.wav,Vardhan,test,272
-273,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.36 PM.wav,Vardhan,train,273
-274,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.43 PM.wav,Vardhan,train,274
-275,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.43 PM.wav,Vardhan,train,275
-276,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.43 PM.wav,Vardhan,val,276
-277,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.43 PM.wav,Vardhan,test,277
-278,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.43 PM.wav,Vardhan,train,278
-279,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.43 PM.wav,Vardhan,train,279
-280,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.43 PM.wav,Vardhan,train,280
-281,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.43 PM.wav,Vardhan,train,281
-282,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.43 PM.wav,Vardhan,test,282
-283,C:\Users\DELL\Documents\Speaker_recognition\speaker_identification\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.43 PM.wav,Vardhan,train,283
+0,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\akash\akash1.wav,akash,train,0
+1,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\akash\akash1.wav,akash,train,1
+2,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\akash\akash1.wav,akash,train,2
+3,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\akash\akash1.wav,akash,train,3
+4,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\akash\akash1.wav,akash,train,4
+5,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\akash\akash1.wav,akash,val,5
+6,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\akash\akash1.wav,akash,test,6
+7,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\akash\akash1.wav,akash,test,7
+8,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\akash\akash1.wav,akash,train,8
+9,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\akash\akash1.wav,akash,train,9
+10,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\akash\akash1.wav,akash,train,10
+11,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\akash\akash1.wav,akash,train,11
+12,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\akash\akash2.wav,akash,train,12
+13,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\akash\akash2.wav,akash,test,13
+14,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\akash\akash2.wav,akash,val,14
+15,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\akash\akash2.wav,akash,val,15
+16,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\akash\akash2.wav,akash,train,16
+17,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\akash\akash2.wav,akash,train,17
+18,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\akash\akash2.wav,akash,train,18
+19,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\akash\akash2.wav,akash,train,19
+20,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\akash\akash2.wav,akash,train,20
+21,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\akash\akash3.wav,akash,train,21
+22,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\akash\akash3.wav,akash,train,22
+23,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\akash\akash3.wav,akash,train,23
+24,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\akash\akash3.wav,akash,train,24
+25,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\akash\akash3.wav,akash,train,25
+26,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\akash\akash3.wav,akash,train,26
+27,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\akash\akash3.wav,akash,test,27
+28,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\akash\akash3.wav,akash,train,28
+29,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\akash\akash3.wav,akash,val,29
+30,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\ashwini\WhatsApp Audio 2026-10-02 at 7.01.27 PM.wav,ashwini,train,30
+31,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\ashwini\WhatsApp Audio 2026-10-02 at 7.01.27 PM.wav,ashwini,train,31
+32,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\ashwini\WhatsApp Audio 2026-10-02 at 7.01.27 PM.wav,ashwini,train,32
+33,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\ashwini\WhatsApp Audio 2026-10-02 at 7.01.27 PM.wav,ashwini,train,33
+34,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\ashwini\WhatsApp Audio 2026-10-02 at 7.01.27 PM.wav,ashwini,train,34
+35,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\ashwini\WhatsApp Audio 2026-10-02 at 7.01.27 PM.wav,ashwini,train,35
+36,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\ashwini\WhatsApp Audio 2026-10-02 at 7.01.27 PM.wav,ashwini,val,36
+37,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\ashwini\WhatsApp Audio 2026-10-02 at 7.01.27 PM.wav,ashwini,train,37
+38,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\ashwini\WhatsApp Audio 2026-10-02 at 7.01.39 PM.wav,ashwini,train,38
+39,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\ashwini\WhatsApp Audio 2026-10-02 at 7.01.39 PM.wav,ashwini,train,39
+40,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\ashwini\WhatsApp Audio 2026-10-02 at 7.01.39 PM.wav,ashwini,test,40
+41,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\ashwini\WhatsApp Audio 2026-10-02 at 7.01.39 PM.wav,ashwini,train,41
+42,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\ashwini\WhatsApp Audio 2026-10-02 at 7.01.39 PM.wav,ashwini,test,42
+43,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\ashwini\WhatsApp Audio 2026-10-02 at 7.01.39 PM.wav,ashwini,train,43
+44,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\ashwini\WhatsApp Audio 2026-10-02 at 7.01.39 PM.wav,ashwini,test,44
+45,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\ashwini\WhatsApp Audio 2026-10-02 at 7.01.39 PM.wav,ashwini,train,45
+46,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\ashwini\WhatsApp Audio 2026-10-02 at 7.01.55 PM.wav,ashwini,train,46
+47,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\ashwini\WhatsApp Audio 2026-10-02 at 7.01.55 PM.wav,ashwini,val,47
+48,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\ashwini\WhatsApp Audio 2026-10-02 at 7.01.55 PM.wav,ashwini,train,48
+49,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\ashwini\WhatsApp Audio 2026-10-02 at 7.01.55 PM.wav,ashwini,train,49
+50,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\ashwini\WhatsApp Audio 2026-10-02 at 7.01.55 PM.wav,ashwini,test,50
+51,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\ashwini\WhatsApp Audio 2026-10-02 at 7.01.55 PM.wav,ashwini,val,51
+52,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\ashwini\WhatsApp Audio 2026-10-02 at 7.01.55 PM.wav,ashwini,val,52
+53,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\ashwini\WhatsApp Audio 2026-10-02 at 7.01.55 PM.wav,ashwini,train,53
+54,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\bharath\WhatsApp Audio 2026-11-09 at 10.59.06 AM (1).wav,bharath,train,54
+55,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\bharath\WhatsApp Audio 2026-11-09 at 10.59.06 AM (1).wav,bharath,train,55
+56,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\bharath\WhatsApp Audio 2026-11-09 at 10.59.06 AM (1).wav,bharath,train,56
+57,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\bharath\WhatsApp Audio 2026-11-09 at 10.59.06 AM (1).wav,bharath,val,57
+58,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\bharath\WhatsApp Audio 2026-11-09 at 10.59.06 AM (1).wav,bharath,val,58
+59,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\bharath\WhatsApp Audio 2026-11-09 at 10.59.06 AM (1).wav,bharath,train,59
+60,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\bharath\WhatsApp Audio 2026-11-09 at 10.59.06 AM (1).wav,bharath,train,60
+61,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\bharath\WhatsApp Audio 2026-11-09 at 10.59.06 AM (1).wav,bharath,val,61
+62,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\bharath\WhatsApp Audio 2026-11-09 at 10.59.06 AM (1).wav,bharath,train,62
+63,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\bharath\WhatsApp Audio 2026-11-09 at 10.59.06 AM.wav,bharath,test,63
+64,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\bharath\WhatsApp Audio 2026-11-09 at 10.59.06 AM.wav,bharath,train,64
+65,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\bharath\WhatsApp Audio 2026-11-09 at 10.59.06 AM.wav,bharath,train,65
+66,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\bharath\WhatsApp Audio 2026-11-09 at 10.59.06 AM.wav,bharath,train,66
+67,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\bharath\WhatsApp Audio 2026-11-09 at 10.59.06 AM.wav,bharath,train,67
+68,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\bharath\WhatsApp Audio 2026-11-09 at 10.59.06 AM.wav,bharath,train,68
+69,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\bharath\WhatsApp Audio 2026-11-09 at 10.59.06 AM.wav,bharath,train,69
+70,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\bharath\WhatsApp Audio 2026-11-09 at 10.59.06 AM.wav,bharath,train,70
+71,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\bharath\WhatsApp Audio 2026-11-09 at 10.59.06 AM.wav,bharath,train,71
+72,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\bharath\WhatsApp Audio 2026-11-09 at 10.59.07 AM.wav,bharath,val,72
+73,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\bharath\WhatsApp Audio 2026-11-09 at 10.59.07 AM.wav,bharath,train,73
+74,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\bharath\WhatsApp Audio 2026-11-09 at 10.59.07 AM.wav,bharath,test,74
+75,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\bharath\WhatsApp Audio 2026-11-09 at 10.59.07 AM.wav,bharath,train,75
+76,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\bharath\WhatsApp Audio 2026-11-09 at 10.59.07 AM.wav,bharath,train,76
+77,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\bharath\WhatsApp Audio 2026-11-09 at 10.59.07 AM.wav,bharath,train,77
+78,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\bharath\WhatsApp Audio 2026-11-09 at 10.59.07 AM.wav,bharath,test,78
+79,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\bharath\WhatsApp Audio 2026-11-09 at 10.59.07 AM.wav,bharath,train,79
+80,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\bharath\WhatsApp Audio 2026-11-09 at 10.59.07 AM.wav,bharath,test,80
+81,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Bindu\WhatsApp Audio 2026-10-01 at 11.50.46 AM (1).wav,Bindu,train,81
+82,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Bindu\WhatsApp Audio 2026-10-01 at 11.50.46 AM (1).wav,Bindu,train,82
+83,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Bindu\WhatsApp Audio 2026-10-01 at 11.50.46 AM (1).wav,Bindu,train,83
+84,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Bindu\WhatsApp Audio 2026-10-01 at 11.50.46 AM (1).wav,Bindu,train,84
+85,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Bindu\WhatsApp Audio 2026-10-01 at 11.50.46 AM (1).wav,Bindu,train,85
+86,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Bindu\WhatsApp Audio 2026-10-01 at 11.50.46 AM (1).wav,Bindu,train,86
+87,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Bindu\WhatsApp Audio 2026-10-01 at 11.50.46 AM (1).wav,Bindu,train,87
+88,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Bindu\WhatsApp Audio 2026-10-01 at 11.50.46 AM.wav,Bindu,val,88
+89,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Bindu\WhatsApp Audio 2026-10-01 at 11.50.46 AM.wav,Bindu,train,89
+90,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Bindu\WhatsApp Audio 2026-10-01 at 11.50.46 AM.wav,Bindu,test,90
+91,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Bindu\WhatsApp Audio 2026-10-01 at 11.50.46 AM.wav,Bindu,val,91
+92,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Bindu\WhatsApp Audio 2026-10-01 at 11.50.46 AM.wav,Bindu,train,92
+93,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Bindu\WhatsApp Audio 2026-10-01 at 11.50.46 AM.wav,Bindu,val,93
+94,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Bindu\WhatsApp Audio 2026-10-01 at 11.50.46 AM.wav,Bindu,train,94
+95,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Bindu\WhatsApp Audio 2026-10-01 at 11.50.46 AM.wav,Bindu,test,95
+96,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Bindu\WhatsApp Audio 2026-10-01 at 11.50.47 AM.wav,Bindu,train,96
+97,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Bindu\WhatsApp Audio 2026-10-01 at 11.50.47 AM.wav,Bindu,train,97
+98,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Bindu\WhatsApp Audio 2026-10-01 at 11.50.47 AM.wav,Bindu,test,98
+99,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Bindu\WhatsApp Audio 2026-10-01 at 11.50.47 AM.wav,Bindu,train,99
+100,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\deepika\deepika1.wav,deepika,train,100
+101,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\deepika\deepika1.wav,deepika,train,101
+102,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\deepika\deepika1.wav,deepika,train,102
+103,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\deepika\deepika1.wav,deepika,test,103
+104,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\deepika\deepika1.wav,deepika,val,104
+105,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\deepika\deepika1.wav,deepika,train,105
+106,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\deepika\deepika1.wav,deepika,train,106
+107,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\deepika\deepika1.wav,deepika,train,107
+108,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\deepika\deepika1.wav,deepika,train,108
+109,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\deepika\deepika2.wav,deepika,train,109
+110,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\deepika\deepika2.wav,deepika,val,110
+111,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\deepika\deepika2.wav,deepika,train,111
+112,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\deepika\deepika2.wav,deepika,test,112
+113,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\deepika\deepika2.wav,deepika,train,113
+114,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\deepika\deepika2.wav,deepika,train,114
+115,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\deepika\deepika2.wav,deepika,train,115
+116,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\deepika\deepika2.wav,deepika,train,116
+117,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\deepika\deepika3.wav,deepika,train,117
+118,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\deepika\deepika3.wav,deepika,val,118
+119,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\deepika\deepika3.wav,deepika,test,119
+120,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\deepika\deepika3.wav,deepika,train,120
+121,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\deepika\deepika3.wav,deepika,train,121
+122,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\deepika\deepika3.wav,deepika,train,122
+123,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\deepika\deepika3.wav,deepika,test,123
+124,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\deepika\deepika3.wav,deepika,val,124
+125,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\deepika\deepika3.wav,deepika,train,125
+126,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.08 AM.wav,Ganesh,train,126
+127,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.08 AM.wav,Ganesh,val,127
+128,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.08 AM.wav,Ganesh,train,128
+129,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.08 AM.wav,Ganesh,train,129
+130,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.08 AM.wav,Ganesh,train,130
+131,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.08 AM.wav,Ganesh,val,131
+132,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.08 AM.wav,Ganesh,test,132
+133,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.08 AM.wav,Ganesh,train,133
+134,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.08 AM.wav,Ganesh,test,134
+135,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.08 AM.wav,Ganesh,train,135
+136,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.09 AM (1).wav,Ganesh,train,136
+137,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.09 AM (1).wav,Ganesh,val,137
+138,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.09 AM (1).wav,Ganesh,train,138
+139,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.09 AM (1).wav,Ganesh,train,139
+140,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.09 AM (1).wav,Ganesh,train,140
+141,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.09 AM (1).wav,Ganesh,train,141
+142,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.09 AM (1).wav,Ganesh,train,142
+143,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.09 AM (1).wav,Ganesh,train,143
+144,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.09 AM (1).wav,Ganesh,val,144
+145,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.09 AM (1).wav,Ganesh,train,145
+146,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.09 AM (1).wav,Ganesh,train,146
+147,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.09 AM.wav,Ganesh,train,147
+148,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.09 AM.wav,Ganesh,train,148
+149,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.09 AM.wav,Ganesh,val,149
+150,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.09 AM.wav,Ganesh,train,150
+151,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.09 AM.wav,Ganesh,test,151
+152,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.09 AM.wav,Ganesh,train,152
+153,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.09 AM.wav,Ganesh,test,153
+154,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.09 AM.wav,Ganesh,train,154
+155,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.09 AM.wav,Ganesh,train,155
+156,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.09 AM.wav,Ganesh,train,156
+157,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Ganesh\WhatsApp Audio 2026-10-06 at 10.38.09 AM.wav,Ganesh,test,157
+158,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\isha\isha1.wav,isha,train,158
+159,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\isha\isha1.wav,isha,train,159
+160,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\isha\isha1.wav,isha,test,160
+161,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\isha\isha1.wav,isha,train,161
+162,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\isha\isha1.wav,isha,val,162
+163,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\isha\isha1.wav,isha,train,163
+164,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\isha\isha1.wav,isha,train,164
+165,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\isha\isha1.wav,isha,train,165
+166,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\isha\isha1.wav,isha,train,166
+167,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\isha\isha2.wav,isha,train,167
+168,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\isha\isha2.wav,isha,val,168
+169,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\isha\isha3.wav,isha,train,169
+170,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\isha\isha3.wav,isha,test,170
+171,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\isha\isha3.wav,isha,train,171
+172,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\isha\isha3.wav,isha,train,172
+173,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\isha\isha3.wav,isha,train,173
+174,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\isha\isha3.wav,isha,test,174
+175,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\isha\isha3.wav,isha,train,175
+176,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\isha\isha3.wav,isha,train,176
+177,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\isha\isha3.wav,isha,train,177
+178,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\isha\isha3.wav,isha,train,178
+179,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\isha\isha3.wav,isha,test,179
+180,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\isha\isha3.wav,isha,val,180
+181,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\isha\isha3.wav,isha,val,181
+182,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\isha\isha3.wav,isha,train,182
+183,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\isha\isha3.wav,isha,train,183
+184,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\isha\isha3.wav,isha,train,184
+185,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\karthik\karthik1.wav,karthik,test,185
+186,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\karthik\karthik1.wav,karthik,train,186
+187,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\karthik\karthik1.wav,karthik,val,187
+188,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\karthik\karthik1.wav,karthik,train,188
+189,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\karthik\karthik1.wav,karthik,train,189
+190,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\karthik\karthik1.wav,karthik,train,190
+191,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\karthik\karthik1.wav,karthik,train,191
+192,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\karthik\karthik1.wav,karthik,train,192
+193,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\karthik\karthik1.wav,karthik,val,193
+194,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\karthik\karthik2.wav,karthik,train,194
+195,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\karthik\karthik2.wav,karthik,train,195
+196,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\karthik\karthik2.wav,karthik,train,196
+197,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\karthik\karthik2.wav,karthik,train,197
+198,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\karthik\karthik2.wav,karthik,train,198
+199,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\karthik\karthik2.wav,karthik,train,199
+200,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\karthik\karthik2.wav,karthik,val,200
+201,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\karthik\karthik2.wav,karthik,val,201
+202,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\karthik\karthik2.wav,karthik,train,202
+203,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\karthik\karthik3.wav,karthik,test,203
+204,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\karthik\karthik3.wav,karthik,test,204
+205,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\karthik\karthik3.wav,karthik,train,205
+206,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\karthik\karthik3.wav,karthik,train,206
+207,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\karthik\karthik3.wav,karthik,train,207
+208,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\karthik\karthik3.wav,karthik,train,208
+209,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\karthik\karthik3.wav,karthik,train,209
+210,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\karthik\karthik3.wav,karthik,test,210
+211,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\karthik\karthik3.wav,karthik,train,211
+212,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.20.39 PM.wav,Kumar,test,212
+213,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.20.39 PM.wav,Kumar,train,213
+214,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.20.39 PM.wav,Kumar,train,214
+215,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.20.39 PM.wav,Kumar,train,215
+216,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.20.39 PM.wav,Kumar,train,216
+217,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.20.39 PM.wav,Kumar,train,217
+218,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.20.39 PM.wav,Kumar,val,218
+219,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.20.39 PM.wav,Kumar,train,219
+220,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.20.39 PM.wav,Kumar,train,220
+221,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.22.06 PM.wav,Kumar,train,221
+222,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.22.06 PM.wav,Kumar,train,222
+223,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.22.06 PM.wav,Kumar,train,223
+224,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.22.06 PM.wav,Kumar,train,224
+225,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.22.06 PM.wav,Kumar,train,225
+226,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.22.06 PM.wav,Kumar,train,226
+227,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.22.06 PM.wav,Kumar,train,227
+228,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.22.06 PM.wav,Kumar,train,228
+229,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.22.06 PM.wav,Kumar,val,229
+230,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.23.45 PM.wav,Kumar,test,230
+231,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.23.45 PM.wav,Kumar,train,231
+232,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.23.45 PM.wav,Kumar,val,232
+233,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.23.45 PM.wav,Kumar,train,233
+234,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.23.45 PM.wav,Kumar,train,234
+235,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.23.45 PM.wav,Kumar,val,235
+236,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.23.45 PM.wav,Kumar,train,236
+237,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.23.45 PM.wav,Kumar,train,237
+238,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.23.45 PM.wav,Kumar,test,238
+239,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Kumar\WhatsApp Ptt 2026-10-03 at 11.23.45 PM.wav,Kumar,test,239
+240,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\pavanesh\WhatsApp Audio 2026-11-09 at 10.58.31 AM.wav,pavanesh,train,240
+241,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\pavanesh\WhatsApp Audio 2026-11-09 at 10.58.31 AM.wav,pavanesh,val,241
+242,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\pavanesh\WhatsApp Audio 2026-11-09 at 10.58.31 AM.wav,pavanesh,train,242
+243,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\pavanesh\WhatsApp Audio 2026-11-09 at 10.58.31 AM.wav,pavanesh,train,243
+244,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\pavanesh\WhatsApp Audio 2026-11-09 at 10.58.31 AM.wav,pavanesh,train,244
+245,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\pavanesh\WhatsApp Audio 2026-11-09 at 10.58.31 AM.wav,pavanesh,train,245
+246,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\pavanesh\WhatsApp Audio 2026-11-09 at 10.58.31 AM.wav,pavanesh,val,246
+247,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\pavanesh\WhatsApp Audio 2026-11-09 at 10.58.31 AM.wav,pavanesh,test,247
+248,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\pavanesh\WhatsApp Audio 2026-11-09 at 10.58.31 AM.wav,pavanesh,val,248
+249,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\pavanesh\WhatsApp Audio 2026-11-09 at 10.58.32 AM (1).wav,pavanesh,train,249
+250,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\pavanesh\WhatsApp Audio 2026-11-09 at 10.58.32 AM (1).wav,pavanesh,train,250
+251,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\pavanesh\WhatsApp Audio 2026-11-09 at 10.58.32 AM (1).wav,pavanesh,train,251
+252,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\pavanesh\WhatsApp Audio 2026-11-09 at 10.58.32 AM (1).wav,pavanesh,train,252
+253,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\pavanesh\WhatsApp Audio 2026-11-09 at 10.58.32 AM (1).wav,pavanesh,train,253
+254,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\pavanesh\WhatsApp Audio 2026-11-09 at 10.58.32 AM (1).wav,pavanesh,test,254
+255,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\pavanesh\WhatsApp Audio 2026-11-09 at 10.58.32 AM (1).wav,pavanesh,train,255
+256,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\pavanesh\WhatsApp Audio 2026-11-09 at 10.58.32 AM (1).wav,pavanesh,train,256
+257,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\pavanesh\WhatsApp Audio 2026-11-09 at 10.58.32 AM (1).wav,pavanesh,train,257
+258,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\pavanesh\WhatsApp Audio 2026-11-09 at 10.58.32 AM.wav,pavanesh,train,258
+259,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\pavanesh\WhatsApp Audio 2026-11-09 at 10.58.32 AM.wav,pavanesh,train,259
+260,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\pavanesh\WhatsApp Audio 2026-11-09 at 10.58.32 AM.wav,pavanesh,test,260
+261,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\pavanesh\WhatsApp Audio 2026-11-09 at 10.58.32 AM.wav,pavanesh,train,261
+262,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\pavanesh\WhatsApp Audio 2026-11-09 at 10.58.32 AM.wav,pavanesh,train,262
+263,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\pavanesh\WhatsApp Audio 2026-11-09 at 10.58.32 AM.wav,pavanesh,train,263
+264,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\pavanesh\WhatsApp Audio 2026-11-09 at 10.58.32 AM.wav,pavanesh,test,264
+265,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\pavanesh\WhatsApp Audio 2026-11-09 at 10.58.32 AM.wav,pavanesh,train,265
+266,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\pavanesh\WhatsApp Audio 2026-11-09 at 10.58.32 AM.wav,pavanesh,val,266
+267,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.12 PM.wav,Rakshitha,test,267
+268,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.12 PM.wav,Rakshitha,train,268
+269,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.12 PM.wav,Rakshitha,train,269
+270,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.12 PM.wav,Rakshitha,train,270
+271,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.12 PM.wav,Rakshitha,train,271
+272,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.12 PM.wav,Rakshitha,train,272
+273,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.12 PM.wav,Rakshitha,train,273
+274,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.12 PM.wav,Rakshitha,train,274
+275,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.12 PM.wav,Rakshitha,train,275
+276,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.12 PM.wav,Rakshitha,train,276
+277,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.13 PM (1).wav,Rakshitha,val,277
+278,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.13 PM (1).wav,Rakshitha,val,278
+279,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.13 PM (1).wav,Rakshitha,train,279
+280,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.13 PM (1).wav,Rakshitha,train,280
+281,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.13 PM (1).wav,Rakshitha,train,281
+282,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.13 PM (1).wav,Rakshitha,train,282
+283,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.13 PM (1).wav,Rakshitha,val,283
+284,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.13 PM (1).wav,Rakshitha,train,284
+285,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.13 PM (1).wav,Rakshitha,test,285
+286,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.13 PM (1).wav,Rakshitha,train,286
+287,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.13 PM.wav,Rakshitha,train,287
+288,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.13 PM.wav,Rakshitha,test,288
+289,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.13 PM.wav,Rakshitha,test,289
+290,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.13 PM.wav,Rakshitha,train,290
+291,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.13 PM.wav,Rakshitha,train,291
+292,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.13 PM.wav,Rakshitha,train,292
+293,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.13 PM.wav,Rakshitha,train,293
+294,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.13 PM.wav,Rakshitha,val,294
+295,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.13 PM.wav,Rakshitha,train,295
+296,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Rakshitha\WhatsApp Audio 2026-10-16 at 2.18.13 PM.wav,Rakshitha,train,296
+297,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\saiganesh\saiganesh1.wav,saiganesh,train,297
+298,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\saiganesh\saiganesh1.wav,saiganesh,train,298
+299,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\saiganesh\saiganesh1.wav,saiganesh,train,299
+300,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\saiganesh\saiganesh1.wav,saiganesh,train,300
+301,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\saiganesh\saiganesh1.wav,saiganesh,train,301
+302,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\saiganesh\saiganesh1.wav,saiganesh,train,302
+303,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\saiganesh\saiganesh1.wav,saiganesh,test,303
+304,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\saiganesh\saiganesh1.wav,saiganesh,val,304
+305,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\saiganesh\saiganesh1.wav,saiganesh,test,305
+306,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\saiganesh\saiganesh1.wav,saiganesh,train,306
+307,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\saiganesh\saiganesh2.wav,saiganesh,val,307
+308,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\saiganesh\saiganesh2.wav,saiganesh,train,308
+309,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\saiganesh\saiganesh2.wav,saiganesh,train,309
+310,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\saiganesh\saiganesh2.wav,saiganesh,val,310
+311,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\saiganesh\saiganesh2.wav,saiganesh,train,311
+312,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\saiganesh\saiganesh2.wav,saiganesh,train,312
+313,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\saiganesh\saiganesh2.wav,saiganesh,train,313
+314,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\saiganesh\saiganesh2.wav,saiganesh,train,314
+315,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\saiganesh\saiganesh2.wav,saiganesh,test,315
+316,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\saiganesh\saiganesh3.wav,saiganesh,val,316
+317,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\saiganesh\saiganesh3.wav,saiganesh,train,317
+318,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\saiganesh\saiganesh3.wav,saiganesh,train,318
+319,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\saiganesh\saiganesh3.wav,saiganesh,test,319
+320,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\saiganesh\saiganesh3.wav,saiganesh,train,320
+321,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\saiganesh\saiganesh3.wav,saiganesh,train,321
+322,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\saiganesh\saiganesh3.wav,saiganesh,train,322
+323,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\saiganesh\saiganesh3.wav,saiganesh,train,323
+324,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\saiganesh\saiganesh3.wav,saiganesh,train,324
+325,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\santosh\santosh1.wav,santosh,test,325
+326,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\santosh\santosh1.wav,santosh,val,326
+327,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\santosh\santosh1.wav,santosh,train,327
+328,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\santosh\santosh1.wav,santosh,train,328
+329,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\santosh\santosh1.wav,santosh,test,329
+330,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\santosh\santosh1.wav,santosh,train,330
+331,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\santosh\santosh1.wav,santosh,train,331
+332,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\santosh\santosh1.wav,santosh,train,332
+333,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\santosh\santosh1.wav,santosh,train,333
+334,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\santosh\santosh2.wav,santosh,train,334
+335,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\santosh\santosh2.wav,santosh,train,335
+336,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\santosh\santosh2.wav,santosh,train,336
+337,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\santosh\santosh2.wav,santosh,val,337
+338,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\santosh\santosh2.wav,santosh,val,338
+339,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\santosh\santosh2.wav,santosh,test,339
+340,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\santosh\santosh2.wav,santosh,val,340
+341,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\santosh\santosh2.wav,santosh,test,341
+342,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\santosh\santosh3.wav,santosh,train,342
+343,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\santosh\santosh3.wav,santosh,train,343
+344,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\santosh\santosh3.wav,santosh,train,344
+345,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\santosh\santosh3.wav,santosh,train,345
+346,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\santosh\santosh3.wav,santosh,train,346
+347,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\santosh\santosh3.wav,santosh,train,347
+348,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\santosh\santosh3.wav,santosh,train,348
+349,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\santosh\santosh3.wav,santosh,train,349
+350,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\sneha\WhatsApp Audio 2026-10-02 at 8.14.48 PM.wav,sneha,train,350
+351,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\sneha\WhatsApp Audio 2026-10-02 at 8.14.48 PM.wav,sneha,train,351
+352,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\sneha\WhatsApp Audio 2026-10-02 at 8.14.48 PM.wav,sneha,train,352
+353,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\sneha\WhatsApp Audio 2026-10-02 at 8.14.48 PM.wav,sneha,test,353
+354,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\sneha\WhatsApp Audio 2026-10-02 at 8.14.48 PM.wav,sneha,train,354
+355,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\sneha\WhatsApp Audio 2026-10-02 at 8.14.48 PM.wav,sneha,train,355
+356,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\sneha\WhatsApp Audio 2026-10-02 at 8.14.55 PM.wav,sneha,train,356
+357,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\sneha\WhatsApp Audio 2026-10-02 at 8.14.55 PM.wav,sneha,train,357
+358,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\sneha\WhatsApp Audio 2026-10-02 at 8.14.55 PM.wav,sneha,train,358
+359,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\sneha\WhatsApp Audio 2026-10-02 at 8.14.55 PM.wav,sneha,train,359
+360,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\sneha\WhatsApp Audio 2026-10-02 at 8.14.55 PM.wav,sneha,test,360
+361,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\sneha\WhatsApp Audio 2026-10-02 at 8.14.55 PM.wav,sneha,train,361
+362,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\sneha\WhatsApp Audio 2026-10-02 at 8.14.55 PM.wav,sneha,val,362
+363,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\sneha\WhatsApp Audio 2026-10-02 at 8.14.55 PM.wav,sneha,val,363
+364,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\sneha\WhatsApp Audio 2026-10-02 at 8.14.55 PM.wav,sneha,train,364
+365,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\sneha\WhatsApp Audio 2026-10-02 at 8.15.02 PM.wav,sneha,val,365
+366,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\sneha\WhatsApp Audio 2026-10-02 at 8.15.02 PM.wav,sneha,train,366
+367,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\sneha\WhatsApp Audio 2026-10-02 at 8.15.02 PM.wav,sneha,train,367
+368,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\sneha\WhatsApp Audio 2026-10-02 at 8.15.02 PM.wav,sneha,train,368
+369,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\sneha\WhatsApp Audio 2026-10-02 at 8.15.02 PM.wav,sneha,test,369
+370,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\sneha\WhatsApp Audio 2026-10-02 at 8.15.02 PM.wav,sneha,train,370
+371,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\sneha\WhatsApp Audio 2026-10-02 at 8.15.02 PM.wav,sneha,train,371
+372,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\sneha\WhatsApp Audio 2026-10-02 at 8.15.02 PM.wav,sneha,train,372
+373,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Summaiya\WhatsApp Audio 2026-10-02 at 11.45.40 AM.wav,Summaiya,train,373
+374,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Summaiya\WhatsApp Audio 2026-10-02 at 11.45.40 AM.wav,Summaiya,test,374
+375,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Summaiya\WhatsApp Audio 2026-10-02 at 11.45.44 AM.wav,Summaiya,train,375
+376,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Summaiya\WhatsApp Audio 2026-10-02 at 11.45.44 AM.wav,Summaiya,train,376
+377,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Summaiya\WhatsApp Audio 2026-10-02 at 11.45.47 AM.wav,Summaiya,train,377
+378,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Summaiya\WhatsApp Audio 2026-10-02 at 11.45.47 AM.wav,Summaiya,val,378
+379,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\sushmitha\susmita1.wav,sushmitha,train,379
+380,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\sushmitha\susmita1.wav,sushmitha,train,380
+381,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\sushmitha\susmita1.wav,sushmitha,train,381
+382,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\sushmitha\susmita1.wav,sushmitha,train,382
+383,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\sushmitha\susmita1.wav,sushmitha,test,383
+384,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\sushmitha\susmita1.wav,sushmitha,train,384
+385,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\sushmitha\susmita1.wav,sushmitha,train,385
+386,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\sushmitha\susmita1.wav,sushmitha,train,386
+387,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\sushmitha\susmita1.wav,sushmitha,val,387
+388,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\sushmitha\susmita2.wav,sushmitha,train,388
+389,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\sushmitha\susmita2.wav,sushmitha,val,389
+390,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\sushmitha\susmita2.wav,sushmitha,train,390
+391,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\sushmitha\susmita2.wav,sushmitha,train,391
+392,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\sushmitha\susmita2.wav,sushmitha,train,392
+393,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\sushmitha\susmita2.wav,sushmitha,val,393
+394,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\sushmitha\susmita2.wav,sushmitha,val,394
+395,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\sushmitha\susmita2.wav,sushmitha,test,395
+396,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\sushmitha\susmita3.wav,sushmitha,test,396
+397,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\sushmitha\susmita3.wav,sushmitha,train,397
+398,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\sushmitha\susmita3.wav,sushmitha,train,398
+399,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\sushmitha\susmita3.wav,sushmitha,train,399
+400,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\sushmitha\susmita3.wav,sushmitha,train,400
+401,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\sushmitha\susmita3.wav,sushmitha,train,401
+402,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\sushmitha\susmita3.wav,sushmitha,train,402
+403,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\sushmitha\susmita3.wav,sushmitha,test,403
+404,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\uday\uday1.wav,uday,train,404
+405,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\uday\uday1.wav,uday,train,405
+406,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\uday\uday1.wav,uday,train,406
+407,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\uday\uday1.wav,uday,train,407
+408,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\uday\uday1.wav,uday,test,408
+409,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\uday\uday1.wav,uday,train,409
+410,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\uday\uday1.wav,uday,train,410
+411,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\uday\uday1.wav,uday,train,411
+412,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\uday\uday1.wav,uday,train,412
+413,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\uday\uday2.wav,uday,train,413
+414,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\uday\uday2.wav,uday,train,414
+415,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\uday\uday2.wav,uday,train,415
+416,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\uday\uday2.wav,uday,val,416
+417,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\uday\uday2.wav,uday,train,417
+418,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\uday\uday2.wav,uday,test,418
+419,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\uday\uday2.wav,uday,test,419
+420,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\uday\uday2.wav,uday,val,420
+421,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\uday\uday2.wav,uday,train,421
+422,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\uday\uday2.wav,uday,train,422
+423,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\uday\uday3.wav,uday,train,423
+424,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\uday\uday3.wav,uday,val,424
+425,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\uday\uday3.wav,uday,val,425
+426,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\uday\uday3.wav,uday,train,426
+427,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\uday\uday3.wav,uday,train,427
+428,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\uday\uday3.wav,uday,train,428
+429,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\uday\uday3.wav,uday,train,429
+430,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\uday\uday3.wav,uday,train,430
+431,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\uday\uday3.wav,uday,test,431
+432,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\ummul\WhatsApp Audio 2026-10-02 at 6.48.53 PM.wav,ummul,test,432
+433,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\ummul\WhatsApp Audio 2026-10-02 at 6.48.53 PM.wav,ummul,train,433
+434,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\ummul\WhatsApp Audio 2026-10-02 at 6.48.53 PM.wav,ummul,train,434
+435,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\ummul\WhatsApp Audio 2026-10-02 at 6.48.53 PM.wav,ummul,train,435
+436,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\ummul\WhatsApp Audio 2026-10-02 at 6.48.53 PM.wav,ummul,train,436
+437,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\ummul\WhatsApp Audio 2026-10-02 at 6.48.53 PM.wav,ummul,train,437
+438,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\ummul\WhatsApp Audio 2026-10-02 at 6.49.00 PM.wav,ummul,val,438
+439,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\ummul\WhatsApp Audio 2026-10-02 at 6.49.00 PM.wav,ummul,train,439
+440,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\ummul\WhatsApp Audio 2026-10-02 at 6.49.00 PM.wav,ummul,train,440
+441,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\ummul\WhatsApp Audio 2026-10-02 at 6.49.00 PM.wav,ummul,test,441
+442,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\ummul\WhatsApp Audio 2026-10-02 at 6.49.00 PM.wav,ummul,test,442
+443,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\ummul\WhatsApp Audio 2026-10-02 at 6.49.09 PM.wav,ummul,val,443
+444,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\ummul\WhatsApp Audio 2026-10-02 at 6.49.09 PM.wav,ummul,val,444
+445,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\ummul\WhatsApp Audio 2026-10-02 at 6.49.09 PM.wav,ummul,train,445
+446,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\ummul\WhatsApp Audio 2026-10-02 at 6.49.09 PM.wav,ummul,train,446
+447,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\ummul\WhatsApp Audio 2026-10-02 at 6.49.09 PM.wav,ummul,train,447
+448,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\ummul\WhatsApp Audio 2026-10-02 at 6.49.09 PM.wav,ummul,train,448
+449,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.36 PM (1).wav,Vardhan,train,449
+450,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.36 PM (1).wav,Vardhan,train,450
+451,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.36 PM (1).wav,Vardhan,train,451
+452,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.36 PM (1).wav,Vardhan,train,452
+453,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.36 PM (1).wav,Vardhan,val,453
+454,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.36 PM (1).wav,Vardhan,train,454
+455,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.36 PM (1).wav,Vardhan,val,455
+456,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.36 PM (1).wav,Vardhan,train,456
+457,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.36 PM (1).wav,Vardhan,test,457
+458,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.36 PM.wav,Vardhan,train,458
+459,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.36 PM.wav,Vardhan,train,459
+460,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.36 PM.wav,Vardhan,train,460
+461,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.36 PM.wav,Vardhan,train,461
+462,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.36 PM.wav,Vardhan,train,462
+463,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.36 PM.wav,Vardhan,val,463
+464,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.36 PM.wav,Vardhan,test,464
+465,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.36 PM.wav,Vardhan,train,465
+466,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.43 PM.wav,Vardhan,train,466
+467,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.43 PM.wav,Vardhan,train,467
+468,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.43 PM.wav,Vardhan,val,468
+469,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.43 PM.wav,Vardhan,test,469
+470,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.43 PM.wav,Vardhan,train,470
+471,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.43 PM.wav,Vardhan,train,471
+472,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.43 PM.wav,Vardhan,train,472
+473,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.43 PM.wav,Vardhan,train,473
+474,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.43 PM.wav,Vardhan,test,474
+475,C:\Users\khami\OneDrive\Documents\Speaker recongnition\dataset\Vardhan\WhatsApp Audio 2026-10-02 at 7.29.43 PM.wav,Vardhan,train,475

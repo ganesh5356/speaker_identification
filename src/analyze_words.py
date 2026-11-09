@@ -2,6 +2,12 @@ import json
 import os
 import sys
 from pathlib import Path
+
+# Ensure .venv site-packages is on sys.path if invoked from global python
+_venv_site = Path(__file__).resolve().parent.parent / ".venv" / "Lib" / "site-packages"
+if _venv_site.exists() and str(_venv_site) not in sys.path:
+    sys.path.insert(0, str(_venv_site))
+
 import librosa
 import numpy as np
 

@@ -1,25 +1,32 @@
 === segment-level ===
-Accuracy: 0.9132
+Accuracy: 0.9057
 
               precision    recall  f1-score   support
 
-       Bindu       0.86      1.00      0.92        18
-      Ganesh       1.00      1.00      1.00        30
-       Kumar       0.96      0.96      0.96        24
-   Rakshitha       0.90      0.75      0.82        24
-    Summaiya       0.62      0.83      0.71         6
+       Bindu       0.75      1.00      0.86        18
+      Ganesh       0.96      0.83      0.89        30
+       Kumar       0.92      0.96      0.94        24
+   Rakshitha       0.74      0.96      0.84        24
+    Summaiya       1.00      0.83      0.91         6
      Vardhan       0.96      1.00      0.98        24
-_background_       0.97      1.00      0.98        30
-     ashwini       0.88      0.88      0.88        24
-     deepika       0.89      0.71      0.79        24
-        isha       0.92      0.92      0.92        24
-       sneha       0.94      0.89      0.91        18
-   sushmitha       0.88      0.92      0.90        24
-       ummul       0.85      0.94      0.89        18
+_background_       0.94      0.97      0.95        30
+       akash       0.88      0.96      0.92        24
+     ashwini       0.95      0.83      0.89        24
+     bharath       0.92      0.96      0.94        24
+     deepika       0.95      0.75      0.84        24
+        isha       0.95      0.83      0.89        24
+     karthik       0.92      0.96      0.94        24
+    pavanesh       0.85      0.96      0.90        24
+   saiganesh       1.00      0.96      0.98        24
+     santosh       1.00      0.88      0.93        24
+       sneha       0.89      0.89      0.89        18
+   sushmitha       0.81      0.92      0.86        24
+        uday       0.91      0.88      0.89        24
+       ummul       1.00      0.72      0.84        18
 
-    accuracy                           0.91       288
-   macro avg       0.89      0.91      0.90       288
-weighted avg       0.92      0.91      0.91       288
+    accuracy                           0.91       456
+   macro avg       0.92      0.90      0.90       456
+weighted avg       0.91      0.91      0.91       456
 
 === recording-level ===
 Accuracy: 1.0000
@@ -33,13 +40,20 @@ Accuracy: 1.0000
     Summaiya       1.00      1.00      1.00         1
      Vardhan       1.00      1.00      1.00         4
 _background_       1.00      1.00      1.00         1
+       akash       1.00      1.00      1.00         4
      ashwini       1.00      1.00      1.00         4
+     bharath       1.00      1.00      1.00         4
      deepika       1.00      1.00      1.00         4
         isha       1.00      1.00      1.00         4
+     karthik       1.00      1.00      1.00         4
+    pavanesh       1.00      1.00      1.00         4
+   saiganesh       1.00      1.00      1.00         4
+     santosh       1.00      1.00      1.00         4
        sneha       1.00      1.00      1.00         3
    sushmitha       1.00      1.00      1.00         4
+        uday       1.00      1.00      1.00         4
        ummul       1.00      1.00      1.00         3
 
-    accuracy                           1.00        44
-   macro avg       1.00      1.00      1.00        44
-weighted avg       1.00      1.00      1.00        44
+    accuracy                           1.00        72
+   macro avg       1.00      1.00      1.00        72
+weighted avg       1.00      1.00      1.00        72
