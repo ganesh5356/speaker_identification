@@ -1,4 +1,4 @@
-import { ArrowRight, Volume2, Sparkles, Users, Cpu, ShieldCheck } from 'lucide-react';
+import { ArrowRight, Volume2, Sparkles, Users, Cpu, ShieldCheck, Activity } from 'lucide-react';
 
 export default function EntryScreen({ onEnter }) {
   return (
@@ -36,7 +36,7 @@ export default function EntryScreen({ onEnter }) {
         {/* System Tag */}
         <div className="entry-tag-badge">
           <Sparkles size={12} className="text-violet" />
-          <span>NEURAL SPEECH & BIOMETRIC AI</span>
+          <span>NEURAL SPEECH & BIOMETRIC AI CONSOLE</span>
         </div>
         
         {/* Main Display Heading */}
@@ -45,14 +45,14 @@ export default function EntryScreen({ onEnter }) {
         </h1>
 
         <p className="entry-desc-modern">
-          Acoustic voiceprint recognition, AI vs. Human deepfake detection, and offline speech-to-text transcription.
+          Acoustic voiceprint recognition, AI vs. Human deepfake detection, open-set impostor rejection, and 100% offline speech transcription.
         </p>
 
         {/* Feature Highlights Pills */}
         <div className="entry-features-pills">
           <span className="entry-pill">
             <Users size={12} className="text-emerald" />
-            <span>12+ Enrolled Speakers</span>
+            <span>15+ Enrolled Speakers</span>
           </span>
           <span className="entry-pill">
             <ShieldCheck size={12} className="text-violet" />
@@ -61,6 +61,10 @@ export default function EntryScreen({ onEnter }) {
           <span className="entry-pill">
             <Cpu size={12} className="text-cyan" />
             <span>100% Offline Speech-to-Text</span>
+          </span>
+          <span className="entry-pill">
+            <Activity size={12} className="text-emerald" />
+            <span>Open-Set Rejection (&tau; = 0.52)</span>
           </span>
         </div>
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { RotateCcw, Home, Sparkles, Activity } from 'lucide-react';
 import { normalizeResultData } from '../utils/mockData';
 import { getConfidenceState } from '../utils/confidenceUtils';
 
@@ -16,10 +17,10 @@ import LowConfidenceTips from '../components/AnalysisResult/LowConfidenceTips';
 import DownloadReport from '../components/AnalysisResult/DownloadReport';
 import VoiceAuthenticity from '../components/AnalysisResult/VoiceAuthenticity';
 
-export default function ResultScreen({ result, onReset, onNavigate }) {
+export default function ResultScreen({ result, onReset, onNavigate, onOpenReport }) {
   // Normalize incoming result or fallback to standard mock object
   const data = normalizeResultData(result);
-  const { isUnknown: confidenceIsLow, level } = getConfidenceState(data.confidence, data.threshold);
+  const { isUnknown: confidenceIsLow } = getConfidenceState(data.confidence, data.threshold);
   const isUnknown = data.is_known !== undefined ? !data.is_known : confidenceIsLow;
 
   return (
@@ -27,22 +28,25 @@ export default function ResultScreen({ result, onReset, onNavigate }) {
       {/* Top Console Navigation Bar */}
       <div className="console-nav-header">
         <div className="console-title-group">
-          <span className="text-label">03 / VOICE INTELLIGENCE CONSOLE</span>
+          <span className="console-nav-badge">03</span>
+          <span className="text-label">VOICE INTELLIGENCE CONSOLE</span>
           <span className="console-status-dot green"></span>
           <span className="console-status-text">ANALYSIS COMPLETE</span>
         </div>
-        <div className="console-nav-actions" style={{ display: "flex", gap: "10px", alignItems: "center" }}>
+        <div className="console-nav-actions">
           {onNavigate && (
             <button
               className="btn-action secondary-nav-btn"
               onClick={() => onNavigate("entry")}
-              title="Return to Home Screen"
+              title="Return to Welcome Screen"
             >
-              ← HOME
+              <Home size={14} />
+              <span>HOME</span>
             </button>
           )}
-          <button className="btn-action reset-btn" onClick={onReset}>
-            ↻ RUN NEW ANALYSIS
+          <button className="btn-action reset-btn" onClick={onReset} title="Analyze another audio recording">
+            <RotateCcw size={14} />
+            <span>RUN NEW SCAN</span>
           </button>
         </div>
       </div>
@@ -94,6 +98,9 @@ export default function ResultScreen({ result, onReset, onNavigate }) {
 
           {/* RIGHT COLUMN: Metadata, Quality, Narrative & Action */}
           <div className="grid-column right-col">
+            {/* TRANSCRIBED WORDS (WHAT WAS SPOKEN) */}
+            <TranscribedWords transcription={data.transcription} />
+
             {/* AUDIO DETAILS */}
             <AudioDetails audio={data.audio} />
 
@@ -108,16 +115,13 @@ export default function ResultScreen({ result, onReset, onNavigate }) {
               summaryText={data.summary}
             />
 
-            {/* TRANSCRIBED WORDS (WHAT WAS SPOKEN) */}
-            <TranscribedWords transcription={data.transcription} />
-
             {/* LOW CONFIDENCE TIPS (If confidence low) */}
             {isUnknown && (
               <LowConfidenceTips isVisible={isUnknown} />
             )}
 
             {/* DOWNLOAD REPORT BUTTON */}
-            <DownloadReport resultData={data} />
+            <DownloadReport resultData={data} onDownload={onOpenReport} />
           </div>
 
         </div>

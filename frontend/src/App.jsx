@@ -190,7 +190,7 @@ export default function App() {
       <header className="system-bar">
         <div className="system-title">
           <span className="status-dot" />
-          <span className="system-tag">VOICE INTELLIGENCE</span>
+          <span className="system-tag brand-tag">VOICE INTELLIGENCE</span>
         </div>
         <div className="system-actions-right">
           <button
@@ -199,16 +199,20 @@ export default function App() {
             aria-label="Toggle light or dark mode theme"
             title={`Switch to ${theme === "dark" ? "Light" : "Dark"} mode`}
           >
-            {theme === "dark" ? "☀ LIGHT" : "☾ DARK"}
+            <span className="desktop-only">{theme === "dark" ? "☀ LIGHT" : "☾ DARK"}</span>
+            <span className="mobile-only">{theme === "dark" ? "☀" : "☾"}</span>
           </button>
           <button
             className="system-tag btn-eval-toggle"
             onClick={() => setActiveScreen(activeScreen === "evaluation" ? "analysis" : "evaluation")}
+            title="Toggle Model Performance Evaluation Dashboard"
           >
-            {activeScreen === "evaluation" ? "✕ CLOSE EVALUATION" : "📊 EVALUATION METRICS"}
+            <span className="desktop-only">{activeScreen === "evaluation" ? "✕ CLOSE EVALUATION" : "📊 EVALUATION METRICS"}</span>
+            <span className="mobile-only">{activeScreen === "evaluation" ? "✕" : "📊 EVAL"}</span>
           </button>
-          <span className="system-tag">
-            {health.state === "online" ? "SYSTEM ONLINE" : "STANDBY MODE"}
+          <span className="system-tag status-pill-tag">
+            <span className="desktop-only">{health.state === "online" ? "SYSTEM ONLINE" : "STANDBY MODE"}</span>
+            <span className="mobile-only">{health.state === "online" ? "ONLINE" : "STANDBY"}</span>
           </span>
         </div>
       </header>
@@ -250,6 +254,7 @@ export default function App() {
             onViewReport={handleViewReport}
             onReanalyze={() => setActiveScreen("analysis")}
             onDelete={handleDeleteHistory}
+            onNavigate={(screen) => setActiveScreen(screen)}
           />
         )}
         {activeScreen === "evaluation" && (
